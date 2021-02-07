@@ -10,13 +10,15 @@ body {
 }
 .app-wrapper {
   max-width: 1280px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px;
 
   display: grid;
   grid-template-areas: 
   "h h"
   "n c";
+  justify-content: center;
 
   grid-template-rows: 1fr;
   grid-template-columns: 2fr 10fr;
@@ -38,7 +40,7 @@ body {
   padding: 10px;
 }
 .nav ul {
-  margin: 10px 20px;
+  margin: 20px;
 }
 .nav ul li {
   margin-bottom: 15px;
@@ -50,9 +52,9 @@ body {
 .nav ul li a {
   text-decoration: none;
   color: #05386b;
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: 600;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 /* component Content */
 .content {
@@ -87,31 +89,44 @@ body {
   font-size: 1.3em;
   margin-bottom: 7px;
 }
-.content-description-web {
+.content-description-web a {
   text-decoration: none;
   color: #379683;
-  font-weight: 500;
+  font-weight: 400;
 }
 .content-posts {
   margin: 30px 20px;
+  width: 90%;
 }
 .content-posts-title {
-  font-size: 1.8em;
-  font-weight: 600;
-  text-transform: lowercase;
-  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 .content-post-new {
-  margin: 30px 0;
-  width: 100%;
-  text-align: right;
+  margin: 20px 0 30px;
+  display: flex;
+  flex-direction: column;
 }
 .content-post-new textarea {
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1em;
+  color: #05386b;
   margin-bottom: 10px;
+  resize: none;
+}
+.content-post-new textarea::placeholder {
+  font-size: 1.1em;
+  color: #999;
 }
 .content-post-new input {
-  text-align: right;
   background-color: #5cdb95;
-  border: 2px solid #379683;
+  border: 1px solid #379683;
   color: #05386b;
+  padding: 5px 0;
+  width: 10%;
+  align-self: flex-end;
+  cursor: pointer;
+  outline: none;
 }

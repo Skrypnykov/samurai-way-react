@@ -13,13 +13,14 @@ const Profile = () => {
                     <p className="content-description-date">Date of Birth: 24 August</p>
                     <p className="content-description-city">City: Dobropillya</p>
                     <p className="content-description-education">Education: School '19</p>
-                    <p>Web: <a href="https://skrypnykov.github.io/" className="content-description-web">skrypnykov.github.io</a></p>
+                    <p className="content-description-web">Web:	&nbsp; <a href="https://skrypnykov.github.io/" target="_blank
+">https://skrypnykov.github.io/</a></p>
                 </div>
             </div>
             <div className="content-posts">
                 <h3 className="content-posts-title">My posts</h3>
                 <div className="content-post-new">
-                    <textarea name="comment" cols="120" rows="5"></textarea><br/>
+                    <textarea name="comment" cols="100" rows="3" placeholder="your news..."></textarea><br/>
                     <input type="submit" value="Send"/>
                 </div>
                 <div>
