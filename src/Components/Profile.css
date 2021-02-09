@@ -66,17 +66,17 @@
   background-color: #5cdb95;
   border: 1px solid #379683;
   color: #05386b;
-  padding: 5px 0;
-  width: 10%;
+  padding: 5px 30px;
   align-self: flex-end;
   cursor: pointer;
   outline: none;
+  font-size: 1em;
 }
 .post-new input:hover {
-  box-shadow: 0 0 1px rgba(0,0,0,0.3);
+  box-shadow: 0 0 2spx rgba(0,0,0,0.3);
 }
 .post-message {
-  margin-left: 5px;
+  margin-bottom: 100px;
 }
 .post-item {
   display: flex;
