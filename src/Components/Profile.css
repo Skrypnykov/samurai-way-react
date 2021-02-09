@@ -1,0 +1,93 @@
+.content {
+  grid-area: c;
+  background-color: transparent;
+  color: #05386b;
+}
+.header-wrap img {
+  max-height: 200px;
+  width: 100%;
+}
+.description-wrap {
+  display: flex;
+  margin: 10px 0;
+}
+.description-avatar {
+  max-width: 15%;
+  height:15%;
+}
+.description-content {
+  margin: 10px 30px;
+}
+.description-title {
+  font-size: 1.9em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.description-date,
+.description-city,
+.description-education,
+.description-web {
+  font-size: 1.3em;
+  margin-bottom: 7px;
+}
+.description-web a {
+  text-decoration: none;
+  color: #379683;
+  font-weight: 400;
+}
+.content-posts {
+  margin: 30px 20px;
+  width: 90%;
+}
+.posts-title {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.post-new {
+  margin: 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.post-new textarea {
+  outline: none;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 1em;
+  color: #05386b;
+  margin-bottom: 10px;
+  resize: none;
+  background-color: rgba( 204, 204, 204, .3);
+}
+.post-new textarea::placeholder {
+  font-size: 1.1em;
+  color: #999;
+}
+.post-new input {
+  background-color: #5cdb95;
+  border: 1px solid #379683;
+  color: #05386b;
+  padding: 5px 0;
+  width: 10%;
+  align-self: flex-end;
+  cursor: pointer;
+  outline: none;
+}
+.post-new input:hover {
+  box-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+.post-message {
+  margin-left: 5px;
+}
+.post-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  color: #05386b;
+  margin-bottom: 40px;
+}
+.post-item img {
+  max-width: 100px;
+}
+.post-item p {
+  margin: 20px 0 0 30px;
+}
