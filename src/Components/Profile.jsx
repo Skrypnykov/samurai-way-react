@@ -30,7 +30,7 @@ const Profile = () => {
                         <p>Hey, why nobody love me?</p>
                     </div>
                     <div className='post-item'>
-                        <img src="https://www.pngkey.com/png/full/87-879351_grapefruit-balm-baby-rawlemon-raw-pure-essential-oil.png" alt=""/>
+                        <img src="https://www.pngkey.com/png/full/99-992421_tab-store-avatar.png" alt=""/>
                         <p>It's our new program! Hey!</p>
                     </div>
                 </div>
