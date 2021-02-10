@@ -1,54 +1,51 @@
-.content {
+.profile {
   grid-area: c;
   background-color: transparent;
   color: #05386b;
 }
-.header-wrap img {
+.header img {
   max-height: 200px;
   width: 100%;
 }
-.description-wrap {
+.description {
   display: flex;
   margin: 10px 0;
 }
-.description-avatar {
+.avatar {
   max-width: 15%;
   height:15%;
 }
-.description-content {
+.content {
   margin: 10px 30px;
 }
-.description-title {
+.contentTitle {
   font-size: 1.9em;
   font-weight: 600;
   margin-bottom: 20px;
 }
-.description-date,
-.description-city,
-.description-education,
-.description-web {
+.date, .city, .education, .web {
   font-size: 1.3em;
   margin-bottom: 7px;
 }
-.description-web a {
+.web a {
   text-decoration: none;
   color: #379683;
   font-weight: 400;
 }
-.content-posts {
+.posts {
   margin: 30px 20px;
   width: 90%;
 }
-.posts-title {
+.postsTitle {
   font-size: 1.5em;
   font-weight: 500;
 }
-.post-new {
+.postNew {
   margin: 20px 0 20px;
   display: flex;
   flex-direction: column;
 }
-.post-new textarea {
+.postNew textarea {
   outline: none;
   border: 1px solid #ddd;
   padding: 10px;
@@ -58,11 +55,11 @@
   resize: none;
   background-color: rgba( 204, 204, 204, .3);
 }
-.post-new textarea::placeholder {
+.postNew textarea::placeholder {
   font-size: 1.1em;
   color: #999;
 }
-.post-new input {
+.postNew input {
   background-color: #5cdb95;
   border: 1px solid #379683;
   color: #05386b;
@@ -72,22 +69,23 @@
   outline: none;
   font-size: 1em;
 }
-.post-new input:hover {
+.postNew input:hover {
   box-shadow: 0 0 2spx rgba(0,0,0,0.3);
 }
-.post-message {
+.message {
   margin-bottom: 100px;
 }
-.post-item {
+.postItem {
   display: flex;
   align-items: center;
   font-size: 1.1em;
+  font-weight: 700;
   color: #05386b;
   margin-bottom: 30px;
 }
-.post-item img {
-  max-width: 100px;
+.postItem img {
+  max-width: 70px;
 }
-.post-item p {
+.postItem p {
   margin: 20px 0 0 30px;
 }

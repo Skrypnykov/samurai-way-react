@@ -4,24 +4,24 @@
     padding: 10px;
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
   }
-  .nav-list {
+  .list {
     margin: 20px;
   }
-  .nav-item {
+  .item {
     margin-bottom: 15px;
     list-style-type: none; 
   }
-  .nav-item:last-child {
+  .item:last-child {
     margin-top: 40px; 
   }
-  .nav-item a {
+  .item a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px #05386b, 0 0 .5px #05386b;
   }
-  .nav-item a:hover {
+  .item a:hover {
     color: rgba( 237, 245, 225, 1);
   }

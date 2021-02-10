@@ -1,36 +1,35 @@
 import React from 'react';
-import './Profile.css';
+import classes from './Profile.module.css';
 
 const Profile = () => {
     return (
-        <div className="content">
-            <div className="header-wrap">
+        <div className={classes.profile}>
+            <div className={classes.header}>
                 <img src="https://miro.medium.com/max/3200/0*cGDKbUrA_8vJC4d3" alt=""/>
             </div>
-            <div className="description-wrap">
-                <img className='description-avatar' src="https://cdn1.iconfinder.com/data/icons/robotics/128/_Artificial_Intelligiance-512.png" alt=""/>
-                <div className="description-content">
-                    <h4 className="description-title">Oleg S.</h4>
-                    <p className="description-date">Date of Birth: &nbsp;24 August</p>
-                    <p className="description-city">City: &nbsp;Dobropillya</p>
-                    <p className="description-education">Education: &nbsp;School '19</p>
-                    <p className="description-web">web:	&nbsp;<a href="https://skrypnykov.github.io/" target="_blank
-">https://skrypnykov.github.io/</a></p>
+            <div className={classes.description}>
+                <img className={classes.avatar} src="https://www.pngkey.com/png/full/115-1150420_avatar-png-pic-male-avatar-icon-png.png" alt=""/>
+                <div className={classes.content}>
+                    <h4 className={classes.contentTitle}>Oleg S.</h4>
+                    <p className={classes.date}>Date of Birth: &nbsp;24 August</p>
+                    <p className={classes.city}>City: &nbsp;Dobropillya</p>
+                    <p className={classes.education}>Education: &nbsp;School '19</p>
+                    <p className={classes.web}>web:	&nbsp;<a href="https://skrypnykov.github.io/" target="_blank" rel="noreferrer">https://skrypnykov.github.io/</a></p>
                 </div>
             </div>
-            <div className="content-posts">
-                <h3 className="posts-title">My posts</h3>
-                <div className="post-new">
+            <div className={classes.posts}>
+                <h3 className={classes.postsTitle}>My posts</h3>
+                <div className={classes.postNew}>
                     <textarea name="comment" cols="100" rows="3" placeholder="your news..."></textarea><br/>
                     <input type="submit" value="Send"/>
                 </div>
-                <div className='post-message'>
-                    <div className='post-item'>
-                        <img src="https://www.pngkey.com/png/full/353-3534482_avatar-portfolio-02-avatar-sketch-cartoon-avatar.png" alt=""/>
+                <div className={classes.message}>
+                    <div className={classes.postItem}>
+                        <img src="https://www.pngkey.com/png/full/119-1195864_avatar-transparent-female-cartoon.png" alt=""/>
                         <p>Hey, why nobody love me?</p>
                     </div>
-                    <div className='post-item'>
-                        <img src="https://www.pngkey.com/png/full/99-992421_tab-store-avatar.png" alt=""/>
+                    <div className={classes.postItem}>
+                        <img src="https://www.pngkey.com/png/full/827-8279659_i-drew-a-thing-for-my-friend-to.png" alt=""/>
                         <p>It's our new program! Hey!</p>
                     </div>
                 </div>
