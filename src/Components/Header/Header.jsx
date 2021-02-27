@@ -1,10 +1,11 @@
 import React from 'react';
 import classes from'./Header.module.css';
+import logoName from '../../Assets/logo-django.svg';
 
 const Header = () => {
     return (
         <header className={classes.header}>
-            <img src="https://static.djangoproject.com/img/logo-django.42234b631760.svg" alt=""/>
+            <h1>The Social Network</h1><img src={logoName} alt=""/>
         </header>
     );
 }
