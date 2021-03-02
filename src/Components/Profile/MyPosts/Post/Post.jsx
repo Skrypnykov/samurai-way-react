@@ -11,7 +11,7 @@ const Post = (props) => {
     return (
         <div className={classes.message}>
             <div className={classes.postItem}>
-                <img src={props.avatar} alt=""/>
+                <img src={props.avatar} alt='avatar'/>
                 <p>{props.message}</p>
             </div>
             <div className={classes.buttonWrap}>
