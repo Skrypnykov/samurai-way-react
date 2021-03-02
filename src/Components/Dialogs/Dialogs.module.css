@@ -1,4 +1,30 @@
 .title {
     font-size: 1.5em;
     font-weight: 500;
+    padding: 10px;
+}
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.dialogsItems {
+    padding: 10px;
+    
+}
+.dialog {
+    margin-bottom: 20px;
+}
+.dialog a {
+    text-decoration: none;
+}
+.activeLink {
+    color: #379683;
+    text-shadow: 1px 1px 1px #05386b, 0 0 .5px #05386b;
+}
+.messagesItems {
+    padding: 10px;
+    
+}
+.message {
+
 }
