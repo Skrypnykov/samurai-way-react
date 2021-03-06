@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.7fc10c20.chunk.css",
-    "main.js": "/static/js/main.d23422d6.chunk.js",
-    "main.js.map": "/static/js/main.d23422d6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b293979f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b293979f.js.map",
-    "static/js/2.e960691f.chunk.js": "/static/js/2.e960691f.chunk.js",
-    "static/js/2.e960691f.chunk.js.map": "/static/js/2.e960691f.chunk.js.map",
-    "static/js/3.7417ef8f.chunk.js": "/static/js/3.7417ef8f.chunk.js",
-    "static/js/3.7417ef8f.chunk.js.map": "/static/js/3.7417ef8f.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.7fc10c20.chunk.css.map": "/static/css/main.7fc10c20.chunk.css.map",
-    "static/js/2.e960691f.chunk.js.LICENSE.txt": "/static/js/2.e960691f.chunk.js.LICENSE.txt",
-    "static/media/avatar-female.69e4a8d2.png": "/static/media/avatar-female.69e4a8d2.png",
-    "static/media/avatar-friend.db419fa6.png": "/static/media/avatar-friend.db419fa6.png",
-    "static/media/avatar-icon-png.c8950e98.png": "/static/media/avatar-icon-png.c8950e98.png",
-    "static/media/avatar-of-nurse.3601435d.png": "/static/media/avatar-of-nurse.3601435d.png",
-    "static/media/logo-django.03d5cf41.svg": "/static/media/logo-django.03d5cf41.svg",
-    "static/media/prof-header.d3fd7af1.jpg": "/static/media/prof-header.d3fd7af1.jpg"
+    "main.css": "/samurai-way-react/static/css/main.7fc10c20.chunk.css",
+    "main.js": "/samurai-way-react/static/js/main.94e6ea83.chunk.js",
+    "main.js.map": "/samurai-way-react/static/js/main.94e6ea83.chunk.js.map",
+    "runtime-main.js": "/samurai-way-react/static/js/runtime-main.8afeed7c.js",
+    "runtime-main.js.map": "/samurai-way-react/static/js/runtime-main.8afeed7c.js.map",
+    "static/js/2.e960691f.chunk.js": "/samurai-way-react/static/js/2.e960691f.chunk.js",
+    "static/js/2.e960691f.chunk.js.map": "/samurai-way-react/static/js/2.e960691f.chunk.js.map",
+    "static/js/3.7417ef8f.chunk.js": "/samurai-way-react/static/js/3.7417ef8f.chunk.js",
+    "static/js/3.7417ef8f.chunk.js.map": "/samurai-way-react/static/js/3.7417ef8f.chunk.js.map",
+    "index.html": "/samurai-way-react/index.html",
+    "static/css/main.7fc10c20.chunk.css.map": "/samurai-way-react/static/css/main.7fc10c20.chunk.css.map",
+    "static/js/2.e960691f.chunk.js.LICENSE.txt": "/samurai-way-react/static/js/2.e960691f.chunk.js.LICENSE.txt",
+    "static/media/avatar-female.69e4a8d2.png": "/samurai-way-react/static/media/avatar-female.69e4a8d2.png",
+    "static/media/avatar-friend.db419fa6.png": "/samurai-way-react/static/media/avatar-friend.db419fa6.png",
+    "static/media/avatar-icon-png.c8950e98.png": "/samurai-way-react/static/media/avatar-icon-png.c8950e98.png",
+    "static/media/avatar-of-nurse.3601435d.png": "/samurai-way-react/static/media/avatar-of-nurse.3601435d.png",
+    "static/media/logo-django.03d5cf41.svg": "/samurai-way-react/static/media/logo-django.03d5cf41.svg",
+    "static/media/prof-header.d3fd7af1.jpg": "/samurai-way-react/static/media/prof-header.d3fd7af1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b293979f.js",
+    "static/js/runtime-main.8afeed7c.js",
     "static/js/2.e960691f.chunk.js",
     "static/css/main.7fc10c20.chunk.css",
-    "static/js/main.d23422d6.chunk.js"
+    "static/js/main.94e6ea83.chunk.js"
   ]
 }
