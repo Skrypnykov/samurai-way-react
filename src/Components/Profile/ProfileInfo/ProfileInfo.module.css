@@ -8,7 +8,7 @@
 }
 .avatar {
   max-width: 15%;
-  height:15%;
+  height: 15%;
 }
 .content {
   margin: 10px 30px;
@@ -18,7 +18,10 @@
   font-weight: 600;
   margin-bottom: 20px;
 }
-.date, .city, .education, .web {
+.date,
+.city,
+.education,
+.web {
   font-size: 1.3em;
   margin-bottom: 7px;
 }
