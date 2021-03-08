@@ -1,0 +1,14 @@
+.dialog {
+    margin-bottom: 20px;
+}
+.dialog a {
+    text-decoration: none;
+    color: #05386b;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.dialog a.activeLink {
+    color: #379683;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #8ee4af, 0 0 .5px #8ee4af;
+}

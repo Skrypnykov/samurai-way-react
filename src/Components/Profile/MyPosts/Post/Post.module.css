@@ -1,16 +1,16 @@
 .message {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   /* border-bottom: 1px solid rgba(5, 56, 107, .1) ; */
 }
 .postItem {
   display: flex;
   align-items: flex-end;
   font-size: 1.1em;
-  font-weight: 600;
+  font-weight: 500;
   color: #05386b;
 }
 .postItem img {
-  max-width: 70px;
+  max-width: 50px;
   margin-right: 30px;
 }
 .postItem p {
@@ -21,16 +21,16 @@
 }
 .button {
   cursor: pointer;
-  margin: .5em 0;
+  margin: 5px 0;
   width: 4em;
   font-size: .9em;
   font-weight: 400;
   background-color: transparent;
   border: none;
 }
-/* .button:hover {
-  font-weight: 600;
-} */
+.button span {
+  margin-left: 5px;
+}
 .button:focus {
   outline: none;
  }
