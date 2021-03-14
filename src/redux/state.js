@@ -1,6 +1,8 @@
 import ava1 from "../Assets/avatar-female.png";
 import ava2 from "../Assets/avatar-friend.png";
 import ava3 from "../Assets/avatar-of-nurse.png";
+import ava4 from "../Assets/avatar-cartoon-eyes-female.png";
+import { rerenderEntireTree } from "../render";
 
 let state = {
   profilePage: {
@@ -50,6 +52,18 @@ let state = {
       { id: 6, message: "Yo" },
     ],
   },
+};
+
+export let addPost = (postMessage) => {
+  let newPost = {
+    id: 5,
+    avatar: ava4,
+    message: postMessage,
+    like: 0,
+    dislike: 0,
+  };
+  state.profilePage.postsData.push(newPost);
+  rerenderEntireTree(state);
 };
 
 export default state;

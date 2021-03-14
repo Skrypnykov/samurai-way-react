@@ -13,18 +13,27 @@ const MyPosts = (props) => {
     />
   ));
 
+  let newPostElement = React.createRef();
+
+  let addPost = () => {
+    let text = newPostElement.current.value;
+    props.addPost(text);
+    newPostElement.current.value = "";
+  };
+
   return (
     <div className={classes.posts}>
       <h3 className={classes.postsTitle}>My posts</h3>
       <div className={classes.postNew}>
         <textarea
+          ref={newPostElement}
           name="comment"
           cols="100"
           rows="3"
           placeholder="your news..."
         ></textarea>
         <br />
-        <input type="submit" value="Add post" />
+        <input type="submit" value="Add post" onClick={addPost} />
       </div>
       {postsEletemts}
     </div>
