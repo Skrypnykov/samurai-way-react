@@ -2,7 +2,10 @@ import ava1 from "../Assets/avatar-female.png";
 import ava2 from "../Assets/avatar-friend.png";
 import ava3 from "../Assets/avatar-of-nurse.png";
 import ava4 from "../Assets/avatar-cartoon-eyes-female.png";
-import { rerenderEntireTree } from "../render";
+
+let rerenderEntireTree = () => {
+  console.log('State changed');
+}
 
 let state = {
   profilePage: {
@@ -72,5 +75,9 @@ export let updateNewPostText = (newText) => {
   state.profilePage.newPostText= newText;
   rerenderEntireTree(state);
 };
+
+export const subscribe = (observer) => {
+  rerenderEntireTree = observer; // observer
+}
 
 export default state;
