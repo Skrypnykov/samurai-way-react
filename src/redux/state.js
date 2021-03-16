@@ -29,6 +29,7 @@ let state = {
         dislike: 2,
       },
     ],
+    newPostText: ''
   },
 
   dialogsPage: {
@@ -54,15 +55,21 @@ let state = {
   },
 };
 
-export let addPost = (postMessage) => {
+export let addPost = () => {
   let newPost = {
     id: 5,
     avatar: ava4,
-    message: postMessage,
+    message: state.profilePage.newPostText,
     like: 0,
     dislike: 0,
   };
   state.profilePage.postsData.push(newPost);
+  state.profilePage.newPostText= '';
+  rerenderEntireTree(state);
+};
+
+export let updateNewPostText = (newText) => {
+  state.profilePage.newPostText= newText;
   rerenderEntireTree(state);
 };
 
