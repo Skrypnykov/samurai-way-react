@@ -4,8 +4,8 @@ import ava3 from "../Assets/avatar-of-nurse.png";
 import ava4 from "../Assets/avatar-cartoon-eyes-female.png";
 
 let rerenderEntireTree = () => {
-  console.log('State changed');
-}
+  console.log("State changed");
+};
 
 let state = {
   profilePage: {
@@ -32,7 +32,7 @@ let state = {
         dislike: 2,
       },
     ],
-    newPostText: ''
+    newPostText: "",
   },
 
   dialogsPage: {
@@ -58,7 +58,7 @@ let state = {
   },
 };
 
-export let addPost = () => {
+export const addPost = () => {
   let newPost = {
     id: 5,
     avatar: ava4,
@@ -67,17 +67,17 @@ export let addPost = () => {
     dislike: 0,
   };
   state.profilePage.postsData.push(newPost);
-  state.profilePage.newPostText= '';
+  state.profilePage.newPostText = "";
   rerenderEntireTree(state);
 };
 
-export let updateNewPostText = (newText) => {
-  state.profilePage.newPostText= newText;
+export const updateNewPostText = (newText) => {
+  state.profilePage.newPostText = newText;
   rerenderEntireTree(state);
 };
 
 export const subscribe = (observer) => {
   rerenderEntireTree = observer; // observer
-}
+};
 
 export default state;
