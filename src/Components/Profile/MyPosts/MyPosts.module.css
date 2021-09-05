@@ -27,16 +27,16 @@
 }
 .postNew input {
   background-color: #5cdb95;
-  border: 1px solid #379683;
+  border: none;
+  border-radius: 5px;
   color: #fff;
-  text-shadow: 1px 1px 1px #05386b, 0 0 .5px #05386b;
+  text-shadow: 0 0 1px #05386b;
   padding: 5px 30px;
   align-self: flex-end;
   cursor: pointer;
-  outline: none;
   font-size: .9em;
   font-weight: 600;
 }
 .postNew input:hover {
-  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+  box-shadow: 0 0 3px rgba(0,0,0,0.9);
 }
