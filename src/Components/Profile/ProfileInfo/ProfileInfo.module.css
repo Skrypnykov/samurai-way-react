@@ -30,3 +30,6 @@
   color: #379683;
   font-weight: 400;
 }
+.web a:hover {
+  color: #3c82b0;
+}
