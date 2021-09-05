@@ -20,11 +20,11 @@
     font-size: 1.3em;
     font-weight: 600;
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px #05386b, 0 0 .5px #05386b;
+    text-shadow: 1px 1px 1px #05386b;
   }
   .item a.activeLink {
     color: #318775;
   }
-  /* .item a:hover {
-    color: rgba( 237, 245, 225, 1);
-  } */
+  .item a:hover {
+    color: rgba( 236, 249, 249, 1);
+  }
