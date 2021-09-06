@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Dialogs.module.css";
+import s from "./Dialogs.module.css";
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 
@@ -13,11 +13,11 @@ const Dialogs = (props) => {
   ));
 
   return (
-    <div className={classes.wrap}>
-      <div className={classes.title}>Dialogs</div>
-      <div className={classes.dialogs}>
-        <div className={classes.dialogsItems}>{dialogsEletemts}</div>
-        <div className={classes.messagesItems}>{messagesElements}</div>
+    <div className={s.wrap}>
+      <div className={s.title}>Dialogs</div>
+      <div className={s.dialogs}>
+        <div className={s.dialogsItems}>{dialogsEletemts}</div>
+        <div className={s.messagesItems}>{messagesElements}</div>
       </div>
     </div>
   );

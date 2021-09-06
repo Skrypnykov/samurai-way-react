@@ -1,8 +1,8 @@
 import React from "react";
-import classes from "./Music.module.css";
+import s from "./Music.module.css";
 
 const Music = (props) => {
-  return <div className={classes.title}>Music</div>;
+  return <div className={s.title}>Music</div>;
 };
 
 export default Music;

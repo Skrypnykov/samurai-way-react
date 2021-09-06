@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Post.module.css";
+import s from "./Post.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp } from "@fortawesome/free-regular-svg-icons";
 import { faThumbsDown } from "@fortawesome/free-regular-svg-icons";
@@ -9,16 +9,16 @@ const faDislike = <FontAwesomeIcon icon={faThumbsDown} />;
 
 const Post = (props) => {
   return (
-    <div className={classes.message}>
-      <div className={classes.postItem}>
+    <div className={s.message}>
+      <div className={s.postItem}>
         <img src={props.avatar} alt="avatar" />
         <p>{props.message}</p>
       </div>
-      <div className={classes.buttonWrap}>
-        <button className={classes.button}>
+      <div className={s.buttonWrap}>
+        <button className={s.button}>
           {faLike} <span>{props.like}</span>
         </button>
-        <button className={classes.button}>
+        <button className={s.button}>
           {faDislike}
           <span>{props.dislike}</span>
         </button>
