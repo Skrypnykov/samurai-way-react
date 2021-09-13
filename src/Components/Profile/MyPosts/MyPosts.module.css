@@ -38,5 +38,7 @@
   font-weight: 600;
 }
 .postNew input:hover {
-  box-shadow: 0 0 2px rgba(139, 108, 108, 0.8);
+  box-shadow: 0 0 2px rgba(139, 108, 108, .9);
+  text-shadow: 0 0 3px #05386b;
+  background-color: #52C586;
 }
