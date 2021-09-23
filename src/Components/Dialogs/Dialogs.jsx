@@ -11,8 +11,12 @@ const Dialogs = (props) => {
     <div className={s.wrap}>
       <div className={s.title}>Dialogs</div>
       <div className={s.dialogs}>
-        <div className={s.dialogsItems}>{dialogsEletemts}</div>
-        <div className={s.messagesItems}>{messagesElements}</div>
+        <div className={s.dialogsItems}>
+            {dialogsEletemts}
+        </div>
+        <div className={s.messagesItems}>
+            {messagesElements}
+        </div>
       </div>
     </div>
   );

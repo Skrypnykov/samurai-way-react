@@ -7,7 +7,12 @@ const Profile = (props) => {
   return (
     <div className={s.wrap}>
       <ProfileInfo />
-      <MyPosts postsData={props.state.postsData} newPostText={props.state.newPostText} addPost={props.addPost} updateNewPostText={props.updateNewPostText} />
+      <MyPosts
+        postsData={props.state.postsData}
+        newPostText={props.state.newPostText}
+        addPost={props.addPost}
+        updateNewPostText={props.updateNewPostText}
+      />
     </div>
   );
 };
