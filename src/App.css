@@ -11,7 +11,7 @@ body {
 .app-wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 10px;
+  padding: .6em;
 
   display: grid;
   grid-template-areas:
@@ -21,9 +21,9 @@ body {
 
   grid-template-rows: 1fr;
   grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
+  grid-gap: .5em;
 }
-.app-content {
+.app-wrapper-content {
   grid-area: c;
   background-color: transparent;
   color: #05386b;

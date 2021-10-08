@@ -12,10 +12,10 @@ const Dialogs = (props) => {
       <div className={s.title}>Dialogs</div>
       <div className={s.dialogs}>
         <div className={s.dialogsItems}>
-            {dialogsEletemts}
+            { dialogsEletemts }
         </div>
         <div className={s.messagesItems}>
-            {messagesElements}
+            { messagesElements }
         </div>
       </div>
     </div>
