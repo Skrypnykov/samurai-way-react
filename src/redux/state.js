@@ -3,6 +3,9 @@ import ava2 from "../Assets/avatar-friend.png";
 import ava3 from "../Assets/avatar-of-nurse.png";
 import ava4 from "../Assets/avatar-cartoon-eyes-female.png";
 
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+
 let store = {
     _state: {
       profilePage: {
@@ -66,7 +69,7 @@ let store = {
     },
 
     dispatch(action) {
-      if (action.type === 'ADD-POST') {
+      if (action.type === ADD_POST) {
         let newPost = {
           id: 5,
           avatar: ava4,
@@ -77,13 +80,16 @@ let store = {
           this._state.profilePage.postsData.push(newPost);
           this._state.profilePage.newPostText = "";
           this._callSubscriber(this._state);
-      } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
+      } else if (action.type === UPDATE_NEW_POST_TEXT) {
           this._state.profilePage.newPostText = action.newText;
           this._callSubscriber(this._state);
       }
     }
 
 }
+
+export const addPostActionCreator = () => ({type: ADD_POST})
+export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, newText: text})
 
 export default store;
 window.store = store;
