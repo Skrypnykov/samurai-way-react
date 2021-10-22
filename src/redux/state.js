@@ -1,12 +1,9 @@
 import ava1 from "../Assets/avatar-female.png";
 import ava2 from "../Assets/avatar-friend.png";
 import ava3 from "../Assets/avatar-of-nurse.png";
-import ava4 from "../Assets/avatar-cartoon-eyes-female.png";
-
-const ADD_POST = 'ADD-POST';
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
-const UPDATE_NEW_MESSAGE_BODY = 'UPDATE-NEW-MESSAGE-BODY';
-const SEND_MESSAGE = 'SEND-MESSAGE';
+import profileReducer from "./profile-reducer";
+import dialogsReducer from "./dialogs-reducer";
+import sidebarReducer from "./sidebar-reducer";
 
 let store = {
     _state: {
@@ -59,6 +56,7 @@ let store = {
         ],
         newMessageBody: "",
       },
+      sidebar: {}
     },
     _callSubscriber() {
       console.log("State changed");
@@ -72,38 +70,15 @@ let store = {
     },
 
     dispatch(action) {
-      if (action.type === ADD_POST) {
-        let newPost = {
-          id: 5,
-          avatar: ava4,
-          message: this._state.profilePage.newPostText,
-          like: 0,
-          dislike: 0,
-        };
-          this._state.profilePage.postsData.push(newPost);
-          this._state.profilePage.newPostText = "";
-          this._callSubscriber(this._state);
-      } else if (action.type === UPDATE_NEW_POST_TEXT) {
-          this._state.profilePage.newPostText = action.newText;
-          this._callSubscriber(this._state);
-      } else if (action.type === UPDATE_NEW_MESSAGE_BODY) {
-          this._state.dialogsPage.newMessageBody = action.messageBody;
-          this._callSubscriber(this._state);
-      } else if (action.type === SEND_MESSAGE) {
-        let body = this._state.dialogsPage.newMessageBody;
-        this._state.dialogsPage.newMessageBody = '';
-        this._state.dialogsPage.messagesData.push({ id: 1006, message: body });
-        this._callSubscriber(this._state);
-      }
+
+      this._state.profilePage = profileReducer(this._state.profilePage, action);
+      this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
+      this._state.sidebar = sidebarReducer(this._state.sidebar, action);
+
+      this._callSubscriber(this._state);
+
     }
-
 }
-
-export const addPostActionCreator = () => ({type: ADD_POST})
-export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, newText: text})
-
-export const sendMessageCreator = () => ({type: SEND_MESSAGE})
-export const updateNewMessageBodyCreator = (body) => ({type: UPDATE_NEW_MESSAGE_BODY, messageBody: body})
 
 export default store;
 window.store = store;

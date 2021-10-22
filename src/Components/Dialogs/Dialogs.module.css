@@ -13,3 +13,40 @@
 .messagesItems {
     padding: 10px;   
 }
+
+.messageNew {
+    margin: 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .messageNew textarea {
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1em;
+    color: #05386b;
+    margin-bottom: 10px;
+    resize: none;
+    background-color: rgba( 204, 204, 204, .3);
+  }
+  .messageNew textarea::placeholder {
+    font-size: 1em;
+    color: #999;
+  }
+  .messageNew button {
+    background-color: #5cdb95;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 0 0 2px #05386b;
+    padding: 5px 30px;
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: .9em;
+    font-weight: 600;
+  }
+  .messageNew button:hover {
+    box-shadow: 0 0 2px rgba(139, 108, 108, .9);
+    text-shadow: 0 0 3px #05386b;
+    background-color: #52C586;
+  }
