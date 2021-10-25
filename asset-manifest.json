@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/samurai-way-react/static/css/main.8c17531f.chunk.css",
-    "main.js": "/samurai-way-react/static/js/main.f9404b6c.chunk.js",
-    "main.js.map": "/samurai-way-react/static/js/main.f9404b6c.chunk.js.map",
-    "runtime-main.js": "/samurai-way-react/static/js/runtime-main.0fbf3499.js",
-    "runtime-main.js.map": "/samurai-way-react/static/js/runtime-main.0fbf3499.js.map",
-    "static/js/2.3bf177d6.chunk.js": "/samurai-way-react/static/js/2.3bf177d6.chunk.js",
-    "static/js/2.3bf177d6.chunk.js.map": "/samurai-way-react/static/js/2.3bf177d6.chunk.js.map",
-    "static/js/3.f984c759.chunk.js": "/samurai-way-react/static/js/3.f984c759.chunk.js",
-    "static/js/3.f984c759.chunk.js.map": "/samurai-way-react/static/js/3.f984c759.chunk.js.map",
+    "main.js": "/samurai-way-react/static/js/main.d392e3b1.chunk.js",
+    "main.js.map": "/samurai-way-react/static/js/main.d392e3b1.chunk.js.map",
+    "runtime-main.js": "/samurai-way-react/static/js/runtime-main.98ba8775.js",
+    "runtime-main.js.map": "/samurai-way-react/static/js/runtime-main.98ba8775.js.map",
+    "static/js/2.cef55255.chunk.js": "/samurai-way-react/static/js/2.cef55255.chunk.js",
+    "static/js/2.cef55255.chunk.js.map": "/samurai-way-react/static/js/2.cef55255.chunk.js.map",
+    "static/js/3.b24bd089.chunk.js": "/samurai-way-react/static/js/3.b24bd089.chunk.js",
+    "static/js/3.b24bd089.chunk.js.map": "/samurai-way-react/static/js/3.b24bd089.chunk.js.map",
     "index.html": "/samurai-way-react/index.html",
     "static/css/main.8c17531f.chunk.css.map": "/samurai-way-react/static/css/main.8c17531f.chunk.css.map",
-    "static/js/2.3bf177d6.chunk.js.LICENSE.txt": "/samurai-way-react/static/js/2.3bf177d6.chunk.js.LICENSE.txt",
+    "static/js/2.cef55255.chunk.js.LICENSE.txt": "/samurai-way-react/static/js/2.cef55255.chunk.js.LICENSE.txt",
     "static/media/avatar-cartoon-eyes-female.03b8f595.png": "/samurai-way-react/static/media/avatar-cartoon-eyes-female.03b8f595.png",
     "static/media/avatar-female.69e4a8d2.png": "/samurai-way-react/static/media/avatar-female.69e4a8d2.png",
     "static/media/avatar-friend.db419fa6.png": "/samurai-way-react/static/media/avatar-friend.db419fa6.png",
@@ -21,9 +21,9 @@
     "static/media/prof-header.d3fd7af1.jpg": "/samurai-way-react/static/media/prof-header.d3fd7af1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0fbf3499.js",
-    "static/js/2.3bf177d6.chunk.js",
+    "static/js/runtime-main.98ba8775.js",
+    "static/js/2.cef55255.chunk.js",
     "static/css/main.8c17531f.chunk.css",
-    "static/js/main.f9404b6c.chunk.js"
+    "static/js/main.d392e3b1.chunk.js"
   ]
 }
