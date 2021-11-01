@@ -3,7 +3,7 @@ import Music from './Music/Music';
 import Navbar from './Navbar/Navbar';
 import News from './News/News';
 import Profile from './Profile/Profile';
-import Dialogs from './Dialogs/Dialogs';
+import DialogsContainer from './Dialogs/DialogsContainer';
 import Settings from './Settings/Settings';
 
 export {
@@ -12,6 +12,6 @@ export {
     Navbar,
     News,
     Profile,
-    Dialogs,
+    DialogsContainer,
     Settings,
 }
