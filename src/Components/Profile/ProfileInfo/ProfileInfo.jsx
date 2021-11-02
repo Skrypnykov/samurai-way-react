@@ -18,13 +18,7 @@ const ProfileInfo = () => {
           <p className={s.education}>Education: &nbsp;School '19</p>
           <p className={s.web}>
             Web: &nbsp;
-            <a
-              href="https://skrypnykov.github.io/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              https://skrypnykov.github.io/
-            </a>
+            <a href="https://skrypnykov.github.io/" target="_blank" rel="noreferrer">https://skrypnykov.github.io/</a>
           </p>
         </div>
       </div>
