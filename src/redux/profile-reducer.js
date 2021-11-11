@@ -8,27 +8,9 @@ const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 
 let initialState = {
   postsData: [
-    {
-      id: 1,
-      avatar: ava1,
-      message: "Hey, why nobody love me?",
-      like: 11,
-      dislike: 0,
-    },
-    {
-      id: 2,
-      avatar: ava2,
-      message: "It's our new program! Hey!",
-      like: 9,
-      dislike: 1,
-    },
-    {
-      id: 3,
-      avatar: ava3,
-      message: "Hi, It's my first post!",
-      like: 21,
-      dislike: 2,
-    },
+    {id: 1, avatar: ava1, message: "Hey, why nobody love me?", like: 11, dislike: 0},
+    {id: 2, avatar: ava2, message: "It's our new program! Hey!", like: 9, dislike: 1},
+    {id: 3, avatar: ava3, message: "Hi, It's my first post!", like: 21, dislike: 2}
   ],
   newPostText: ""
 };
