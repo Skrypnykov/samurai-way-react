@@ -8,6 +8,7 @@ import {
   DialogsContainer,
   News,
   Music,
+  Users,
   Settings,
 } from "./Components";
 
@@ -25,6 +26,8 @@ const App = (props) => {
           render={() => <News />} />
         <Route path="/music"
           render={() => <Music />} />
+        <Route path="/users"
+          render={() => <Users />} />
         <Route path="/settings"
           render={() => <Settings />} />
       </div>
