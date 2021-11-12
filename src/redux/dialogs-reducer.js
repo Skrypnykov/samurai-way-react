@@ -12,7 +12,6 @@ let initialState = {
         { id: 7, name: "Tomas" },
         { id: 8, name: "Robert" },
     ],
-
     messagesData: [
         { id: 1000, message: "Hi!!!" },
         { id: 1001, message: "How are you?" },

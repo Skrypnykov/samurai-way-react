@@ -4,7 +4,7 @@ import Profile from './Profile/Profile';
 import DialogsContainer from './Dialogs/DialogsContainer';
 import News from './News/News';
 import Music from './Music/Music';
-import Users from './Users/Users';
+import UsersContainer from './Users/UsersContainer';
 import Settings from './Settings/Settings';
 
 export {
@@ -14,6 +14,6 @@ export {
     DialogsContainer,
     News,
     Music,
-    Users,
+    UsersContainer,
     Settings,
 }
