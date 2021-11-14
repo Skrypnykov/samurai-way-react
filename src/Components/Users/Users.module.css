@@ -3,3 +3,18 @@
     font-weight: 600;
     padding: 10px;
 }
+.wrap {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    margin: 3rem 0;
+}
+.wrapUser{
+
+}
+.avatar {
+    width: 100px;
+}
+.wrapDescription {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
