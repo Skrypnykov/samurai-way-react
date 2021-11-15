@@ -11,18 +11,18 @@ const Users = (props) => {
             <div>
               <img className={s.avatar} src={u.photoUrl} alt="" />
             </div>
-            <div>
+            <div className={s.wrapButton}>
               <button>Follow</button>
             </div>
           </div>
           <div className={s.wrapDescription}>
-            <div>
-              <div>{u.fullName}</div>
-              <div>{u.status}</div>
+            <div className={s.alignment}>
+              <div className={s.fullName}>{u.fullName}</div>
+              <div className={s.statusUser}>{u.status}</div>
             </div>
-            <div>
-              <div>{u.location.country}</div>
-              <div>{u.location.city}</div>
+            <div className={s.alignment}>
+              <div className={s.country}>{u.location.country}</div>
+              <div className={s.city}>{u.location.city}</div>
             </div>
           </div>
         </div>  
