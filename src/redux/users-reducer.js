@@ -1,6 +1,3 @@
-import ava1 from "../Assets/avatar-icon-png.png";
-import ava2 from "../Assets/avatar-friend.png";
-
 const FOLLOW = "FOLLOW";
 const UNFOLLOW = "UNFOLLOW";
 const SET_USERS = "SET_USERS";
