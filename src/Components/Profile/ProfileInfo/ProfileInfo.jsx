@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./ProfileInfo.module.css";
 import profHeader from "../../../Assets/prof-header.jpg";
-import myAvatar from "../../../Assets/avatar-icon-png.png";
+import myAvatar from "../../../Assets/avatar-man.png";
 
 const ProfileInfo = () => {
   return (
