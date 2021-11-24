@@ -3,7 +3,7 @@
   font-weight: 600;
   padding: 10px;
 }
-.button {
+.buttonGet {
   background-color: #5cdb95;
   border: none;
   border-radius: 5px;
@@ -12,7 +12,7 @@
   padding: 5px 30px;
   align-self: flex-end;
   cursor: pointer;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 600;
 }
 .wrap {
@@ -29,7 +29,7 @@
   width: 100px;
 }
 .wrapButton {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .wrapButton Button {
   background-color: #5cdb95;
@@ -41,7 +41,7 @@
   width: 100px;
   align-self: flex-end;
   cursor: pointer;
-  font-size: 0.6em;
+  font-size: .9em;
   font-weight: 600;
 }
 .wrapDescription {
