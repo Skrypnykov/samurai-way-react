@@ -22,7 +22,7 @@ const Dialogs = (props) => {
 
   return (
     <div className={s.wrap}>
-      <div className={s.title}>Dialogs</div>
+      <h2 className={s.title}>Dialogs</h2>
       <div className={s.dialogs}>
         <div className={s.dialogsItems}>{dialogsEletemts}</div>
         <div className={s.messagesItems}>

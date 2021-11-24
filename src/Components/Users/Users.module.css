@@ -1,61 +1,71 @@
 .title {
-    font-size: 1.5em;
-    font-weight: 600;
-    padding: 10px;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 10px;
+}
+.button {
+  background-color: #5cdb95;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: 0 0 2px #05386b;
+  padding: 5px 30px;
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
 }
 .wrap {
-    display: grid;
-    grid-template-columns: 2fr 10fr;
-    grid-gap: 10px;
-    margin: 3rem 0;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  margin: 3rem 0;
 }
-.wrapUser{
-    display: grid;
-    justify-items: center;
+.wrapUser {
+  display: grid;
+  justify-items: center;
 }
 .avatar {
-    width: 100px;
+  width: 100px;
 }
 .wrapButton {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-
 .wrapButton Button {
-    background-color: #5cdb95;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    text-shadow: 0 0 2px #05386b;
-    padding: 5px;
-    width: 100px;
-    align-self: flex-end;
-    cursor: pointer;
-    font-size: .6em;
-    font-weight: 600;
-  }
-
+  background-color: #5cdb95;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: 0 0 2px #05386b;
+  padding: 5px;
+  width: 100px;
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 0.6em;
+  font-weight: 600;
+}
 .wrapDescription {
-    display: grid;
-    grid-template-columns: 8fr 2fr;
-    border: 2px solid #5cdb95;
-    border-radius: 20px;
-    padding: 20px;
-    margin-right: 50px;
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  border: 2px solid #5cdb95;
+  border-radius: 20px;
+  padding: 20px;
+  margin-right: 50px;
 }
 .fullName {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 .statusUser {
-    font-size: 1.2rem;
-    font-weight: 500;
-    align-self: end;
+  font-size: 1.2rem;
+  font-weight: 500;
+  align-self: end;
 }
 .alignment {
-    display: grid;
+  display: grid;
 }
 .country {
-    font-weight: 500;
+  font-weight: 500;
 }
 .city {
-    font-size: .9em;
+  font-size: 0.9em;
 }
