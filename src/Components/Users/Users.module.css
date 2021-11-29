@@ -3,6 +3,9 @@
   font-weight: 600;
   padding: 10px;
 }
+.selectedPage {
+  font-weight: 700;
+}
 .buttonGet {
   background-color: #5cdb95;
   border: none;
@@ -41,7 +44,7 @@
   width: 100px;
   align-self: flex-end;
   cursor: pointer;
-  font-size: .9em;
+  font-size: 0.9em;
   font-weight: 600;
 }
 .wrapDescription {
