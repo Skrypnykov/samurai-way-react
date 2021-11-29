@@ -20,9 +20,9 @@ const App = (props) => {
       <div className="app-wrapper-content">
         <Route path="/profile" render={() => <Profile />} />
         <Route path="/dialogs" render={() => <DialogsContainer />} />
+        <Route path="/users" render={() => <UsersContainer />} />
         <Route path="/news" render={() => <News />} />
         <Route path="/music" render={() => <Music />} />
-        <Route path="/users" render={() => <UsersContainer />} />
         <Route path="/settings" render={() => <Settings />} />
       </div>
     </div>
