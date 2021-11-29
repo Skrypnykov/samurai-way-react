@@ -24,10 +24,9 @@ class Users extends React.Component {
     return (
       <div>
         <h2 className={s.title}>Users</h2>
-        <div>
+        <div className={s.pagination}>
           {pages.map( p => {
-            return <span className={this.props.currentPage === p && s.selectedPage }
-            onclick={() => {this.props.setCurrentPage(p)}}>{p}</span>
+            return <span className={this.props.currentPage === p && s.selectedPage } onclick={() => {this.props.setCurrentPage(p)}}>{p}</span>
           })}
 
         </div>
