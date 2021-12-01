@@ -1,6 +1,6 @@
-import userPhoto from "../../Assets/user.png";
 import React from "react";
 import s from "./Users.module.css";
+import userPhoto from "../../Assets/user.png";
 
 let Users = (props) => {
 
@@ -14,7 +14,6 @@ let Users = (props) => {
   return (
     <div>
       <h2 className={s.title}>Users</h2>
-
       {props.users.map((u) => (
         <div key={u.id}>
           <div className={s.wrap}>
