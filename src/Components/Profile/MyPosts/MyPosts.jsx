@@ -20,7 +20,7 @@ const MyPosts = (props) => {
     <div className={s.posts}>
       <h3 className={s.postsTitle}>My posts</h3>
       <div className={s.postNew}>
-        <textarea onChange={onPostChange} ref={newPostElement} name="comment" cols="100" rows="3" placeholder="your post..." value={props.newPostText} />
+        <textarea onChange={onPostChange} ref={newPostElement} name="comment" cols="" rows="3" placeholder="your post..." value={props.newPostText} />
         <br />
         <input type="submit" value="Add post" onClick={onAddPost} />
       </div>
