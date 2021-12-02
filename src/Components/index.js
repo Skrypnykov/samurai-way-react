@@ -1,6 +1,6 @@
 import Header from './Header/Header';
 import Navbar from './Navbar/Navbar';
-import Profile from './Profile/Profile';
+import ProfileContainer from './Profile/ProfileContainer';
 import DialogsContainer from './Dialogs/DialogsContainer';
 import News from './News/News';
 import Music from './Music/Music';
@@ -10,7 +10,7 @@ import Settings from './Settings/Settings';
 export {
     Header,
     Navbar,
-    Profile,
+    ProfileContainer,
     DialogsContainer,
     News,
     Music,

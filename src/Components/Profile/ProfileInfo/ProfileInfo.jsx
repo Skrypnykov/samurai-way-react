@@ -1,24 +1,25 @@
 import React from "react";
 import s from "./ProfileInfo.module.css";
 import profHeader from "../../../Assets/prof-header.jpg";
-import myAvatar from "../../../Assets/avatar-man.png";
+import Preloader from "../../Common/Preloader/Preloader";
 
-const ProfileInfo = () => {
+const ProfileInfo = (props) => {
+  if (!props.profile) {
+    return <Preloader />
+  }
+
   return (
     <div>
       <div className={s.header}>
         <img src={profHeader} alt="" />
       </div>
       <div className={s.description}>
-        <img className={s.avatar} src={myAvatar} alt="" />
+        <img className={s.avatar} src={props.profile.photos.large} alt="" />
         <div className={s.content}>
-          <h4 className={s.contentTitle}>Oleh S.</h4>
-          <p className={s.date}>Date of Birth: &nbsp;24 August</p>
-          <p className={s.city}>City: &nbsp;Dobropillya</p>
-          <p className={s.education}>Education: &nbsp;School '19</p>
-          <p className={s.web}>
-            Web: &nbsp;
-            <a href="https://skrypnykov.github.io/" target="_blank" rel="noreferrer">https://skrypnykov.github.io/</a>
+          <h4 className={s.contentTitle}>{props.profile.fullName}</h4>
+
+          <p className={s.contentItem}>about me: &nbsp; 
+            <span className={s.contentData}>{props.profile.aboutMe}</span>
           </p>
         </div>
       </div>

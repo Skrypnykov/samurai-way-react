@@ -1,9 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import s from "./Users.module.css";
 import userPhoto from "../../Assets/user.png";
 
 let Users = (props) => {
-
   let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
 
   let pages = [];
@@ -18,33 +18,14 @@ let Users = (props) => {
         <div key={u.id}>
           <div className={s.wrap}>
             <div className={s.wrapUser}>
-              <div>
-                {
-                  <img
-                    className={s.avatar}
-                    src={u.photos.small != null ? u.photos.small : userPhoto}
-                    alt=""
-                  />
-                }
-              </div>
+              <NavLink to={'/profile/' + u.id}>
+                <img className={s.avatar} 
+                     src={u.photos.small != null ? u.photos.small : userPhoto} 
+                     alt="" 
+                />
+              </NavLink>
               <div className={s.wrapButton}>
-                {u.followed ? (
-                  <button
-                    onClick={() => {
-                      props.unfollow(u.id);
-                    }}
-                  >
-                    Follow
-                  </button>
-                ) : (
-                  <button
-                    onClick={() => {
-                      props.follow(u.id);
-                    }}
-                  >
-                    Unfollow
-                  </button>
-                )}
+                {u.followed ? (<button onClick={() => { props.unFollow(u.id); }}>Follow</button>) : (<button onClick={() => { props.follow(u.id); }}>Unfollow</button>)}
               </div>
             </div>
             <div className={s.wrapDescription}>
@@ -63,11 +44,8 @@ let Users = (props) => {
       <div className={s.pagination}>
         {pages.map((p) => {
           return (
-            <span
-              className={props.currentPage === p && s.selectedPage}
-              onClick={(e) => {
-                props.onPageChanged(p);
-              }}
+            <span className={props.currentPage === p && s.selectedPage}
+                  onClick={(e) => {props.onPageChanged(p);}}
             >
               {p}
             </span>

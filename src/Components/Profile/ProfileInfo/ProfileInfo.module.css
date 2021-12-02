@@ -7,29 +7,25 @@
   margin: 10px 20px;
 }
 .avatar {
-  max-width: 15%;
-  height: 15%;
+  max-width: 18%;
+  height: 18%;
 }
 .content {
+  font-size: 1.3em;
   margin: 10px 30px;
 }
 .contentTitle {
-  font-size: 1.9em;
-  font-weight: 600;
+  font-size: 1.5em;
+  font-weight: 500;
   margin-bottom: 20px;
 }
-.date,
-.city,
-.education,
-.web {
-  font-size: 1.3em;
+.contentItem {
   margin-bottom: 7px;
 }
-.web a {
+.content h4{
+  text-transform: capitalize;
+}
+.contentData {
   text-decoration: none;
   color: #379683;
-  font-weight: 400;
-}
-.web a:hover {
-  color: #3c82b0;
 }
