@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/samurai-way-react/static/css/main.0997db7c.chunk.css",
-    "main.js": "/samurai-way-react/static/js/main.d7b03802.chunk.js",
-    "main.js.map": "/samurai-way-react/static/js/main.d7b03802.chunk.js.map",
-    "runtime-main.js": "/samurai-way-react/static/js/runtime-main.243aea9b.js",
-    "runtime-main.js.map": "/samurai-way-react/static/js/runtime-main.243aea9b.js.map",
-    "static/js/2.fb39d0d5.chunk.js": "/samurai-way-react/static/js/2.fb39d0d5.chunk.js",
-    "static/js/2.fb39d0d5.chunk.js.map": "/samurai-way-react/static/js/2.fb39d0d5.chunk.js.map",
-    "static/js/3.92c16403.chunk.js": "/samurai-way-react/static/js/3.92c16403.chunk.js",
-    "static/js/3.92c16403.chunk.js.map": "/samurai-way-react/static/js/3.92c16403.chunk.js.map",
+    "main.css": "/samurai-way-react/static/css/main.5296e434.chunk.css",
+    "main.js": "/samurai-way-react/static/js/main.c0fde80e.chunk.js",
+    "main.js.map": "/samurai-way-react/static/js/main.c0fde80e.chunk.js.map",
+    "runtime-main.js": "/samurai-way-react/static/js/runtime-main.a0da567a.js",
+    "runtime-main.js.map": "/samurai-way-react/static/js/runtime-main.a0da567a.js.map",
+    "static/js/2.119c017e.chunk.js": "/samurai-way-react/static/js/2.119c017e.chunk.js",
+    "static/js/2.119c017e.chunk.js.map": "/samurai-way-react/static/js/2.119c017e.chunk.js.map",
+    "static/js/3.2b5c404c.chunk.js": "/samurai-way-react/static/js/3.2b5c404c.chunk.js",
+    "static/js/3.2b5c404c.chunk.js.map": "/samurai-way-react/static/js/3.2b5c404c.chunk.js.map",
     "index.html": "/samurai-way-react/index.html",
-    "static/css/main.0997db7c.chunk.css.map": "/samurai-way-react/static/css/main.0997db7c.chunk.css.map",
-    "static/js/2.fb39d0d5.chunk.js.LICENSE.txt": "/samurai-way-react/static/js/2.fb39d0d5.chunk.js.LICENSE.txt",
+    "static/css/main.5296e434.chunk.css.map": "/samurai-way-react/static/css/main.5296e434.chunk.css.map",
+    "static/js/2.119c017e.chunk.js.LICENSE.txt": "/samurai-way-react/static/js/2.119c017e.chunk.js.LICENSE.txt",
     "static/media/avatar-cartoon-eyes-female.03b8f595.png": "/samurai-way-react/static/media/avatar-cartoon-eyes-female.03b8f595.png",
     "static/media/avatar-female.69e4a8d2.png": "/samurai-way-react/static/media/avatar-female.69e4a8d2.png",
     "static/media/avatar-friend.db419fa6.png": "/samurai-way-react/static/media/avatar-friend.db419fa6.png",
-    "static/media/avatar-man.c8950e98.png": "/samurai-way-react/static/media/avatar-man.c8950e98.png",
     "static/media/avatar-of-nurse.3601435d.png": "/samurai-way-react/static/media/avatar-of-nurse.3601435d.png",
-    "static/media/logo-django.03d5cf41.svg": "/samurai-way-react/static/media/logo-django.03d5cf41.svg",
+    "static/media/logo-django.5b8bfc5a.svg": "/samurai-way-react/static/media/logo-django.5b8bfc5a.svg",
+    "static/media/preloader.eb249d14.svg": "/samurai-way-react/static/media/preloader.eb249d14.svg",
     "static/media/prof-header.d3fd7af1.jpg": "/samurai-way-react/static/media/prof-header.d3fd7af1.jpg",
     "static/media/user.ba7b88ec.png": "/samurai-way-react/static/media/user.ba7b88ec.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.243aea9b.js",
-    "static/js/2.fb39d0d5.chunk.js",
-    "static/css/main.0997db7c.chunk.css",
-    "static/js/main.d7b03802.chunk.js"
+    "static/js/runtime-main.a0da567a.js",
+    "static/js/2.119c017e.chunk.js",
+    "static/css/main.5296e434.chunk.css",
+    "static/js/main.c0fde80e.chunk.js"
   ]
 }
