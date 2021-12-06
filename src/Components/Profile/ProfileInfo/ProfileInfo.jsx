@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './ProfileInfo.module.css';
 import profHeader from '../../../Assets/prof-header.jpg';
+import profilePhoto from "../../../Assets/avatar-man.png";
 import Preloader from '../../Common/Preloader/Preloader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
@@ -18,7 +19,7 @@ const ProfileInfo = (props) => {
         <img src={profHeader} alt="" />
       </div>
       <div className={s.description}>
-        <img className={s.avatar} src={props.profile.photos.large} alt="" />
+        <img className={s.avatar} src={props.profile.photos.large != null ? props.profile.photos.large : profilePhoto} alt="" />
         <div className={s.content}>
           <h4 className={s.contentTitle}>{props.profile.fullName}</h4>
           <p className={s.contentItem}>about me: &nbsp; 
