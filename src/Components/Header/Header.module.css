@@ -3,18 +3,33 @@
     background-color: #379683;
     box-shadow: 0 0 7px rgba(0,0,0,0.3);
     position: relative;
-  }
-  h1 {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+}
+.logo h1 {
     font-size: .80em;
     color: #fff;
     text-shadow: 1px 1px 1px #05386b, 0 0 .5px #05386b;
-    /* margin: 10px 50px 0; */
     position: absolute;
     top: 22px;
     left: 70px;
-  }
-  .header img {
+}
+.logo img {
     margin: 25px 20px 20px;
     width: 170px;
-  }
+}
   
+.loginBlock {
+  display: grid;
+  justify-self: center;
+  align-items: center;
+  font-size: 1.1em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #05386b, 0 0 .5px #05386b;
+  font-weight: 600;
+}
+.loginLink {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}

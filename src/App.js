@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Route } from "react-router-dom";
 import {
-  Header,
+  HeaderContainer,
   Navbar,
   ProfileContainer,
   DialogsContainer,
@@ -15,7 +15,7 @@ import {
 const App = (props) => {
   return (
     <div className="app-wrapper">
-      <Header />
+      <HeaderContainer />
       <Navbar />
       <div className="app-wrapper-content">
         <Route path="/profile/:userId?" render={() => <ProfileContainer />} />
