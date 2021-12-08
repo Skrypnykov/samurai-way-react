@@ -1,4 +1,5 @@
 import React from "react";
+import * as axios from 'axios';
 import { NavLink } from "react-router-dom";
 import s from "./Users.module.css";
 import userPhoto from "../../Assets/user.png";
@@ -25,7 +26,36 @@ let Users = (props) => {
                 />
               </NavLink>
               <div className={s.wrapButton}>
-                {u.followed ? (<button onClick={() => { props.unfollow(u.id); }}>Follow</button>) : (<button onClick={() => { props.follow(u.id); }}>Unfollow</button>)}
+                {u.followed 
+                  ? (<button onClick={() => {
+                    axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,
+                      {
+                          withCredentials: true,
+                          headers: {
+                            'API-KEY': 'a8051bff-0f4f-4056-b54f-7f5326bdab8d',
+                          }
+                      })
+                      .then((response) => {
+                        if (response.data.resultCode === 0) {
+                          props.unfollow(u.id);
+                        }
+                      });
+                  }}>Unfollow</button>) :
+                  (<button onClick={() => {
+                    axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`, {},
+                      {
+                        withCredentials: true,
+                        headers: {
+                          'API-KEY': 'a8051bff-0f4f-4056-b54f-7f5326bdab8d',
+                        }
+                      })
+                      .then((response) => {
+                        if (response.data.resultCode === 0) {
+                          props.follow(u.id);
+                        }
+                      });
+                  }}>Follow</button>)
+                }
               </div>
             </div>
             <div className={s.wrapDescription}>
