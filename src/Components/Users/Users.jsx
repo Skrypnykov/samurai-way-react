@@ -3,7 +3,6 @@ import * as axios from 'axios';
 import { NavLink } from "react-router-dom";
 import s from "./Users.module.css";
 import userPhoto from "../../Assets/user.png";
-import { toggleFollowingProgress } from './../../redux/users-reducer';
 
 let Users = (props) => {
   let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
