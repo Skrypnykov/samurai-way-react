@@ -1,3 +1,5 @@
+import {usersAPI} from './../Api/Api';
+
 import ava1 from "../Assets/avatar-female.png";
 import ava2 from "../Assets/avatar-friend.png";
 import ava3 from "../Assets/avatar-of-nurse.png";
@@ -47,5 +49,12 @@ export const updateNewPostTextActionCreator = (text) => ({
   type: UPDATE_NEW_POST_TEXT,
   newText: text,
 });
+
+// Redux Thunk 
+export const getUserProfile = (userId) => (dispatch) => {
+  usersAPI.getProfile(userId).then((response) => {
+    dispatch (setUserProfile(response.data));
+  });
+}
 
 export default profileReducer;
