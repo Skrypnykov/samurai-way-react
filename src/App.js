@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { Route } from "react-router-dom";
 import {
+  LoginPage,
   HeaderContainer,
   Navbar,
   ProfileContainer,
@@ -24,6 +25,7 @@ const App = (props) => {
         <Route path="/news" render={() => <News />} />
         <Route path="/music" render={() => <Music />} />
         <Route path="/settings" render={() => <Settings />} />
+        <Route path="/login" render={() => <LoginPage />} />
       </div>
     </div>
   );
