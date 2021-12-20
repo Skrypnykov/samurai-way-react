@@ -1,0 +1,21 @@
+.status {
+  padding: 5px 0;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.statusMode {
+  font-size: 20px;
+  padding: 2px 0;
+  font-weight: 600;
+  font-style: italic;
+}
+.statusInput {
+  margin: 0;
+  padding: 0 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #05386b;
+  background-color: rgba(204, 204, 204, 0.4);
+}
