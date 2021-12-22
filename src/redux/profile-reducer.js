@@ -1,4 +1,4 @@
-import {usersAPI} from './../Api/Api';
+import {usersAPI ,profileAPI} from './../Api/Api';
 
 import ava1 from "../Assets/avatar-female.png";
 import ava2 from "../Assets/avatar-friend.png";
@@ -8,6 +8,7 @@ import avaDefault from "../Assets/avatar-cartoon-eyes-female.png";
 const SET_USER_PROFILE = "SET_USER_PROFILE";
 const ADD_POST = "ADD-POST";
 const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
+const SET_STATUS = "SET_STATUS";
 
 let initialState = {
   postsData: [
@@ -17,6 +18,7 @@ let initialState = {
   ],
   newPostText: "",
   profile: null,
+  status: ""
 };
 
 export const profileReducer = (state = initialState, action) => {
@@ -35,6 +37,12 @@ export const profileReducer = (state = initialState, action) => {
         newPostText: action.newText,
       };
     }
+    case SET_STATUS: {
+      return { 
+        ...state,
+        status: action.status,
+      };
+    }
     case SET_USER_PROFILE: {
       return {...state, profile: action.profile};
     }
@@ -45,15 +53,27 @@ export const profileReducer = (state = initialState, action) => {
 
 export const setUserProfile = (profile) => ({ type: SET_USER_PROFILE, profile });
 export const addPostActionCreator = () => ({ type: ADD_POST });
-export const updateNewPostTextActionCreator = (text) => ({
-  type: UPDATE_NEW_POST_TEXT,
-  newText: text,
-});
+export const updateNewPostTextActionCreator = (text) => ({ type: UPDATE_NEW_POST_TEXT, newText: text });
+export const setStatus = (status) => ({ type: SET_STATUS, status });
 
 // Redux Thunk 
 export const getUserProfile = (userId) => (dispatch) => {
   usersAPI.getProfile(userId).then((response) => {
     dispatch (setUserProfile(response.data));
+  });
+}
+
+export const getStatus = (userId) => (dispatch) => {
+  profileAPI.getStatus(userId).then((response) => {
+    dispatch (setStatus(response.data));
+  });
+}
+
+export const updateStatus = (status) => (dispatch) => {
+  profileAPI.updateStatus(status).then((response) => {
+    if (response.data.resultCode === 0 ) {
+      dispatch (setStatus(status));
+    }
   });
 }
 

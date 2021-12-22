@@ -73,9 +73,7 @@
   display: inline-block;
   width: 42px;
   height: 22px;
-
 }
-
 .slider {
   position: absolute;
   cursor: pointer;
@@ -88,7 +86,6 @@
   transition: .4s;
   border-radius: 4px;
 }
-
 .slider:before {
   position: absolute;
   content: "";
@@ -100,15 +97,12 @@
   -webkit-transition: .4s;
   transition: .4s;
 }
-
 .switchInput:checked + .slider {
   background-color: #5cdb95;
 }
-
 .switchInput:focus + .slider {
   box-shadow: 0 0 1px #5cdb95;
 }
-
 .switchInput:checked + .slider:before {
   -webkit-transform: translateX(18px);
   -ms-transform: translateX(18px);
