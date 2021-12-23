@@ -25,11 +25,19 @@ class ProfileStatus extends React.Component {
         });
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.status !== this.props.status) {
+            this.setState({
+                status: this.props.status
+            })
+        }
+    }
+
     render() {
         return (
             <div className={s.status}>
                 {!this.state.editMode &&
-                    <div className={s.statusMode} onDoubleClick={this.activateEditMode}>{this.props.status || '-----'}</div>
+                    <div className={s.statusMode} onDoubleClick={this.activateEditMode}>{this.props.status || 'no status'}</div>
                 }
                 {this.state.editMode &&
                     <input onChange={this.onStatusChange} className={s.statusInput} autoFocus={true} onBlur={this.deactivateEditMode} defaultValue={this.state.status} />
