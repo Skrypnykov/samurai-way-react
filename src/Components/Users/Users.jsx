@@ -13,7 +13,6 @@ let Users = (props) => {
 
   return (
     <div>
-      <h2 className={s.title}>Users</h2>
       {props.users.map((u) => (
         <div key={u.id}>
           <div className={s.wrap}>
@@ -49,7 +48,7 @@ let Users = (props) => {
       <div className={s.pagination}>
         {pages.map((p) => {
           return (
-            <span className={props.currentPage === p && s.selectedPage} onClick={(e) => { props.onPageChanged(p); }}>
+            <span className={props.currentPage === p && s.selectedPage} onClick={(e) => {props.onPageChanged(p);}} >
               {p}
             </span>
           );
