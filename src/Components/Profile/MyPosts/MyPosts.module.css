@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
 }
-.postNew textarea {
+.postNewTextarea {
   outline: none;
   border: 1px solid #ddd;
   padding: 10px;
@@ -21,11 +21,11 @@
   resize: none;
   background-color: rgba( 204, 204, 204, .3);
 }
-.postNew textarea::placeholder {
+.postNewTextarea::placeholder {
   font-size: 1.1em;
   color: #999;
 }
-.postNew input {
+.postNewButton {
   background-color: #5cdb95;
   border: none;
   border-radius: 5px;
@@ -37,7 +37,7 @@
   font-size: .9em;
   font-weight: 600;
 }
-.postNew input:hover {
+.postNewButton:hover {
   box-shadow: 0 0 2px rgba(139, 108, 108, .9);
   text-shadow: 0 0 3px #05386b;
   background-color: #52C586;

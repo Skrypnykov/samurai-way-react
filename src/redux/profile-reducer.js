@@ -7,7 +7,6 @@ import avaDefault from "../Assets/avatar-cartoon-eyes-female.png";
 
 const SET_USER_PROFILE = "SET_USER_PROFILE";
 const ADD_POST = "ADD-POST";
-const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 const SET_STATUS = "SET_STATUS";
 
 let initialState = {
@@ -16,7 +15,6 @@ let initialState = {
     {id: 2, avatar: ava2, message: "It's our new program! Hey!", like: 9, dislike: 1},
     {id: 3, avatar: ava3, message: "Hi, It's my first post!", like: 21, dislike: 2}
   ],
-  newPostText: "",
   profile: null,
   status: ""
 };
@@ -24,17 +22,10 @@ let initialState = {
 export const profileReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_POST: {
-      let newPost = {id: 4, avatar: avaDefault, message: state.newPostText, like: 0, dislike: 0};
+      let newPost = {id: 4, avatar: avaDefault, message: action.newPostText, like: 0, dislike: 0};
       return {
         ...state,
-        postsData: [...state.postsData, newPost],
-        newPostText: ""
-      };
-    }
-    case UPDATE_NEW_POST_TEXT: {
-      return { 
-        ...state,
-        newPostText: action.newText,
+        postsData: [...state.postsData, newPost]
       };
     }
     case SET_STATUS: {
@@ -52,8 +43,7 @@ export const profileReducer = (state = initialState, action) => {
 };
 
 export const setUserProfile = (profile) => ({ type: SET_USER_PROFILE, profile });
-export const addPostActionCreator = () => ({ type: ADD_POST });
-export const updateNewPostTextActionCreator = (text) => ({ type: UPDATE_NEW_POST_TEXT, newText: text });
+export const addPostActionCreator = (newPostText) => ({ type: ADD_POST, newPostText });
 export const setStatus = (status) => ({ type: SET_STATUS, status });
 
 // Redux Thunk 
