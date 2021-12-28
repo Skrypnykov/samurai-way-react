@@ -15,13 +15,8 @@ const Post = (props) => {
         <p>{props.message}</p>
       </div>
       <div className={s.buttonWrap}>
-        <button className={s.button}>
-          {faLike} <span>{props.like}</span>
-        </button>
-        <button className={s.button}>
-          {faDislike}
-          <span>{props.dislike}</span>
-        </button>
+        <button className={s.button}>{faLike} <span>{props.like}</span></button>
+        <button className={s.button}>{faDislike}<span>{props.dislike}</span></button>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { profileAPI } from './../Api/Api';
+import { profileAPI } from '../Api/Api';
 
 import ava1 from "../Assets/avatar-female.png";
 import ava2 from "../Assets/avatar-friend.png";

@@ -1,19 +1,36 @@
 import React from 'react';
 import s from './Login.module.css';
 import { Field, reduxForm } from 'redux-form';
+import { Input } from '../Common/FormsControls/FormsControls';
+import { required } from './../../Utils/Validators/validators';
 
 const LoginForm = (props) => {
     return (
         <div className={s.wrap}>
             <form onSubmit={props.handleSubmit} className={s.form}>
                 <div className={s.formItem}>
-                    <Field className={s.formItemInput} placeholder={"login"} name={"login"} type="text" component={"input"}/>
+                    <Field className={s.formItemInput}
+                        placeholder={"login"}
+                        name={"login"}
+                        type="text"
+                        component={Input}
+                        validate={[required]} />
                 </div>
                 <div className={s.formItem}>
-                    <Field className={s.formItemInput} placeholder={"password"} name={"password"} type="password" component={"input"} />
+                    <Field className={s.formItemInput} 
+                        placeholder={"password"} 
+                        name={"password"} 
+                        type="password" 
+                        component={Input}
+                        validate={[required]} />
                 </div>
                 <div className={s.formCheckbox}>
-                    <label className={s.formCheckboxLabel} htmlFor=""><Field className={s.formCheckboxInput} name={"rememberMe"} type={"checkbox"} component={"input"} />remember me</label>
+                    <label className={s.formCheckboxLabel} htmlFor="">
+                        <Field className={s.formCheckboxInput} 
+                            name={"rememberMe"} 
+                            type={"checkbox"} 
+                            component={Input} />remember me
+                    </label>
                 </div>
                 <div className={s.formItem}>
                     <button className={s.formLoginButton}>Login</button>
@@ -25,7 +42,7 @@ const LoginForm = (props) => {
 
 const LoginReduxForm = reduxForm({ form: 'login' })(LoginForm)
 
-const Login =(props) => {
+const Login = (props) => {
     const onSubmit = (formData) => {
         console.log(formData);
     }
