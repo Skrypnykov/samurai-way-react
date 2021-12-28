@@ -11,8 +11,13 @@
     position: absolute;
     color: white;
     background-color: tomato;
-    padding: 2px 5px;
+    padding: 2px 4px;
     bottom: 10px;
     left: 0;
     font-size: .75em;
+}
+.formControlChild input + .formControlError {
+    left: auto;
+    right: 0;
+    font-size: .7em;
 }
