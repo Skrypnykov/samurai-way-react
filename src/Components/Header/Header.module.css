@@ -4,7 +4,7 @@
     box-shadow: 0 0 7px rgba(0,0,0,0.3);
     position: relative;
     display: grid;
-    grid-template-columns: 10fr 2fr;
+    grid-template-columns: 8fr 2fr;
 }
 .logo h1 {
     font-size: .80em;
@@ -38,13 +38,11 @@
 }
 
 .logOutButton {
-  background-color: #5cdb95;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
+  background-color: transparent;
+  border: 1px dotted #5cdb95 ;
+  color: #DEF7E9;
   text-shadow: 0 0 2px #05386b;
   padding: 3px 12px;
-  align-self: flex-end;
   cursor: pointer;
   font-size: .7em;
   font-weight: 600;
