@@ -28,8 +28,24 @@
   text-shadow: 1px 1px 1px #05386b, 0 0 .5px #05386b;
   font-weight: 600;
 }
+.logIn {
+  font-size: 1.2em;
+}
 .loginLink {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+}
+
+.logOutButton {
+  background-color: #5cdb95;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: 0 0 2px #05386b;
+  padding: 3px 12px;
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: .7em;
+  font-weight: 600;
 }
