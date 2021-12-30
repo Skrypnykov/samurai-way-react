@@ -41,7 +41,7 @@ const AddNewPostForm = (props) => {
           name="newPostText"
           cols=""
           rows="3"
-          placeholder="your post..."
+          placeholder="post message..."
           validate={[required, maxLength50]}
         />
       </div>

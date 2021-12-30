@@ -48,7 +48,7 @@ let Users = (props) => {
       <div className={s.pagination}>
         {pages.map((p) => {
           return (
-            <span className={props.currentPage === p && s.selectedPage} onClick={(e) => {props.onPageChanged(p);}} >
+            <span className={props.currentPage === p && s.selectedPage} onClick={(e) => {props.onPageChanged(p)}} >
               {p}
             </span>
           );
