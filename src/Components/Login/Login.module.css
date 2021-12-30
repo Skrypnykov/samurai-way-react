@@ -10,6 +10,7 @@
     grid-area: a;
     align-self: center;
     justify-self: center;
+    position: relative;
 }
 
 .formItemInput {
@@ -65,4 +66,14 @@
     box-shadow: 0 0 2px rgba(139, 108, 108, .9);
     text-shadow: 0 0 3px #05386b;
     background-color: #52C586;
+}
+.formControlError {
+    color: white;
+    background-color: tomato;
+    margin-top: 10px;
+    padding: 4px 10px;
+    text-align: center;
+    font-size: .75em;
+    position: absolute;
+    width: 100%;
 }

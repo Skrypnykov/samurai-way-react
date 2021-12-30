@@ -15,7 +15,7 @@ const LoginForm = (props) => {
                     <Field className={s.formItemInput}
                         placeholder={'email'}
                         name={'email'}
-                        // type={"text"}
+                        type={"text"}
                         component={Input}
                         validate={[required]}
                     />
@@ -42,6 +42,7 @@ const LoginForm = (props) => {
                 <div className={s.formItem}>
                     <button className={s.formLoginButton}>Login</button>
                 </div>
+                { props.error && <div className={s.formControlError}>{props.error}</div> }
             </form>
         </div>
     )
