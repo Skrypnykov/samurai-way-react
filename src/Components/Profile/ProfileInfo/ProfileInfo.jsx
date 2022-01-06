@@ -3,7 +3,7 @@ import s from './ProfileInfo.module.css';
 // import profHeader from '../../../Assets/prof-header.jpg';
 import profilePhoto from "../../../Assets/avatar-man.png";
 import Preloader from '../../Common/Preloader/Preloader';
-import ProfileStatus from "./ProfileStatus";
+import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faFacebook, faVk, faTwitter, faInstagram, faYoutube, faInternetExplorer } from '@fortawesome/free-brands-svg-icons';
@@ -22,7 +22,7 @@ const ProfileInfo = (props) => {
       <div className={s.description}>
         <img className={s.avatar} src={props.profile.photos.large != null ? props.profile.photos.large : profilePhoto} alt="" />
         <div className={s.content}>
-          <ProfileStatus status={props.status} updateStatus={props.updateStatus} />
+          <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus} />
           <h4 className={s.contentTitle}>{props.profile.fullName}</h4>
           <p className={s.contentItem}>about me: &nbsp; 
             <span className={s.contentData}>{props.profile.aboutMe}</span>
