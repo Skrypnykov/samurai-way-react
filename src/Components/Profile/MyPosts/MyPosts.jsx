@@ -7,15 +7,10 @@ import { Textarea } from './../../Common/FormsControls/FormsControls';
 
 const maxLength50 = maxLengthCreator(50);
 
-const MyPosts = (props) => {
+const MyPosts = React.memo(props => {
+
   let postsEletemts = props.posts.map((p) => (
-    <Post
-      key={p.id}
-      avatar={p.avatar}
-      message={p.message}
-      like={p.like}
-      dislike={p.dislike}
-    />
+    <Post key={p.id} avatar={p.avatar} message={p.message} like={p.like} dislike={p.dislike} />
   ));
 
   let onAddPost = (values) => {
@@ -29,7 +24,7 @@ const MyPosts = (props) => {
       {postsEletemts}
     </div>
   );
-};
+});
 
 const AddNewPostForm = (props) => {
   return (
