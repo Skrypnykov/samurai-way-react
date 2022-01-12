@@ -1,48 +1,30 @@
 import React from 'react';
 import s from './Login.module.css';
-import { Field, reduxForm } from 'redux-form';
-import  { Redirect } from 'react-router-dom';
+import { reduxForm } from 'redux-form';
+import { Redirect } from 'react-router-dom';
 import { Input } from '../Common/FormsControls/FormsControls';
 import { required } from './../../Utils/Validators/validators';
 import { connect } from 'react-redux';
 import { login } from './../../Redux/auth-reducer';
+import { createField } from './../Common/FormsControls/FormsControls';
 
-const LoginForm = (props) => {
+const LoginForm = ({ handleSubmit, error }) => {
     return (
         <div className={s.wrap}>
-            <form onSubmit={props.handleSubmit} className={s.form}>
-                <div className={s.formItem}>
-                    <Field className={s.formItemInput}
-                        placeholder={'email'}
-                        name={'email'}
-                        type={"text"}
-                        component={Input}
-                        validate={[required]}
-                    />
-                </div>
-                <div className={s.formItem}>
-                    <Field className={s.formItemInput}
-                        placeholder={'password'}
-                        name={'password'}
-                        type={"password"}
-                        component={Input}
-                        validate={[required]}
-                    />
-                </div>
+            <form onSubmit={handleSubmit} className={s.form}>
+                {createField(s.formItemInput, "email", "email", "text", Input, [required])}
+                {createField(s.formItemInput, "password", "password", "password", Input, [required])}
+
                 <div className={s.formCheckbox}>
                     <label className={s.formCheckboxLabel} htmlFor="">
-                        <Field className={s.formCheckboxInput}
-                            name={'rememberMe'}
-                            type={'checkbox'}
-                            component={Input}
-                        />
+                        {createField(s.formCheckboxInput, null, "rememberMe", "checkbox", Input, [])}
                         remember me
                     </label>
                 </div>
                 <div className={s.formItem}>
                     <button className={s.formLoginButton}>Login</button>
                 </div>
-                { props.error && <div className={s.formControlError}>{props.error}</div> }
+                {error && <div className={s.formControlError}>{error}</div>}
             </form>
         </div>
     )
@@ -54,11 +36,9 @@ const Login = (props) => {
     const onSubmit = (formData) => {
         props.login(formData.email, formData.password, formData.rememberMe);
     }
-
     if (props.isAuth) {
         return <Redirect to={"/profile"} />
     }
-
     return (
         <div>
             <LoginReduxForm onSubmit={onSubmit} />
@@ -70,4 +50,4 @@ const mapStateToProps = (state) => ({
     isAuth: state.auth.isAuth
 })
 
-export default connect( mapStateToProps, {login} ) (Login);
+export default connect(mapStateToProps, { login })(Login);
