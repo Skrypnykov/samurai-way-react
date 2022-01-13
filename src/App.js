@@ -1,10 +1,11 @@
 import React from "react";
-import "./App.css";
-import { Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import { withRouter } from 'react-router';
-import { connect } from "react-redux";
+import { Provider, connect } from "react-redux";
 import { compose } from "redux";
+import store from "./Redux/redux-store";
 import { initializeApp } from "./Redux/app-reducer";
+import "./App.css";
 import { LoginPage, HeaderContainer, Navbar, ProfileContainer, DialogsContainer, News, Music, UsersContainer, Settings } from "./Components";
 import Preloader from "./Components/Common/Preloader/Preloader";
 
@@ -15,7 +16,7 @@ class App extends React.Component {
 
   render() {
     if (!this.props.initialized) {
-      return <Preloader/>
+      return <Preloader />
     }
     return (
       <div className="app-wrapper">
@@ -39,6 +40,16 @@ const mapStateToProps = (state) => ({
   initialized: state.app.initialized
 })
 
-export default compose (
-  withRouter, 
+let AppContainer = compose(
+  withRouter,
   connect(mapStateToProps, { initializeApp }))(App);
+
+const SamuraiJSApp = (props) => {
+  return <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Provider store={store}>
+      <AppContainer />
+    </Provider>
+  </BrowserRouter>
+}
+
+export default SamuraiJSApp;

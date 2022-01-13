@@ -1,9 +1,9 @@
 import { usersAPI } from '../Api/Api';
 import { updateObjectInArray } from './../Utils/object-helpers';
 
-const FOLLOW = "FOLLOW";
-const UNFOLLOW = "UNFOLLOW";
-const SET_USERS = "SET_USERS";
+const FOLLOW = "samurai-network/follow/FOLLOW";
+const UNFOLLOW = "samurai-network/follow/UNFOLLOW";
+const SET_USERS = "samurai-network/users/SET_USERS";
 const SET_CURRENT_PAGE = "SET_CURRENT_PAGE";
 const SET_TOTAL_USERS_COUNT = "SET_TOTAL_USERS_COUNT";
 const TOGGLE_IS_FETCHING = "TOGGLE_IS_FETCHING";
