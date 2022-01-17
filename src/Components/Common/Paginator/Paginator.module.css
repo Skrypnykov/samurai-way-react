@@ -1,17 +1,29 @@
-.pagination {
+.paginator {
   text-align: center;
   max-width: 100%;
-  margin: 0 5px;
+  margin: 10px 5px;
 }
-.pagination span {
+.pageNumber {
   font-size: 1em;
-  padding: 3px 5px;
+  padding: 3px 5px 1px 3px;
   cursor: pointer;
   display: inline-block;
 }
 .selectedPage {
-  background-color: #5cdb95;
+  background-color: #318775;
   color: #fff;
   font-weight: 700;
   border-radius: 4px;
+}
+button {
+  background-color: #5cdb95;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: 0 0 2px #05386b;
+  margin: 0 8px;
+  padding: 3px 10px;
+  cursor: pointer;
+  font-size: .9em;
+  font-weight: 600;
 }
