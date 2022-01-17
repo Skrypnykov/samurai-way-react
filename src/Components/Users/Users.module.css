@@ -45,16 +45,18 @@
   border: 2px solid #5cdb95;
   border-radius: 20px;
   padding: 20px;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 .fullName {
   font-size: 1.2em;
   font-weight: 600;
 }
 .statusUser {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   align-self: end;
+  word-break: break-all;
+  padding-right: 1.5em;
 }
 .alignment {
   display: grid;

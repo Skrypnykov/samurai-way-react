@@ -36,7 +36,6 @@
 .socialNetwork li {
   cursor: pointer;
   font-size: 1.3em;
-  flex: 22 1 auto;
   margin: 0 5px;
 }
 .socialNetwork li:hover {

@@ -15,7 +15,7 @@
   font-weight: 700;
   border-radius: 4px;
 }
-button {
+.paginatorButton {
   background-color: #5cdb95;
   border: none;
   border-radius: 5px;

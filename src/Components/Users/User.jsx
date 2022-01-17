@@ -25,12 +25,12 @@ let User = ({ user, followingInProgress, unfollow, follow }) => {
         </div>
         <div className={s.wrapDescription}>
           <div className={s.alignment}>
-            <div className={s.fullName}>{user.name}</div>
-            <div className={s.statusUser}>{user.status}</div>
+            <span className={s.fullName}>{user.name}</span>
+            <span className={s.statusUser}>{user.status}</span>
           </div>
           <div className={s.alignment}>
-            <div className={s.country}>{"user.location.country"}</div>
-            <div className={s.city}>{"user.location.city"}</div>
+            <span className={s.country}>{"user.location.country"}</span>
+            <span className={s.city}>{"user.location.city"}</span>
           </div>
         </div>
       </div>
