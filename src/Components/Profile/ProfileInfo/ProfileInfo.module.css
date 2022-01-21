@@ -6,10 +6,28 @@
   display: flex;
   margin: 10px 20px;
 }
-.avatar {
-  max-width: 18%;
-  height: 18%;
+
+.profilePhoto {
+  display: grid;
+
 }
+.mainPhoto {
+  max-width: 80%;
+  margin-bottom: 10px;
+}
+/* 
+.addPhotoButton {
+  background-color: #5cdb95;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: 0 0 2px #05386b;
+  padding: 5px;
+  cursor: pointer;
+  font-size: .9em;
+  font-weight: 600;
+} */
+
 .content {
   font-size: 1.3em;
   margin: 10px 30px;
@@ -29,6 +47,9 @@
   text-decoration: none;
   color: #379683;
 }
+
+
+
 .socialNetwork {
   display: flex;
   margin: 50px -5px 0;

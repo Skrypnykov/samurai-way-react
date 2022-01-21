@@ -3,16 +3,16 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { compose } from "redux";
 import { withAuthRedirect } from "../../Hoc/withAuthRedirect";
-import { getUserProfile, getStatus, updateStatus } from '../../Redux/profile-reducer';
+import { getUserProfile, getStatus, updateStatus, savePhoto } from '../../Redux/profile-reducer';
 import Profile from "./Profile";
 
 class ProfileContainer extends React.Component {
 
-  componentDidMount () {
+  refreshProfile() {
     let userId = this.props.match.params.userId;
-    if(!userId) {
+    if (!userId) {
       userId = this.props.autorizedUserId;
-      if(!userId){
+      if (!userId) {
         this.props.history.push("/login");
       }
     }
@@ -20,12 +20,24 @@ class ProfileContainer extends React.Component {
     this.props.getStatus(userId);
   }
 
-  render () {
+  componentDidMount() {
+    this.refreshProfile();
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (this.props.match.params.userId !== prevProps.match.params.userId) {
+      this.refreshProfile();
+    }
+  }
+
+  render() {
     return (
-      <Profile {...this.props} 
-        profile={this.props.profile} 
-        status={this.props.status} 
+      <Profile {...this.props}
+        isOwner={!this.props.match.params.userId}
+        profile={this.props.profile}
+        status={this.props.status}
         updateStatus={this.props.updateStatus}
+        savePhoto={this.props.savePhoto}
       />
     )
   }
@@ -39,7 +51,7 @@ let mapStateToProps = (state) => ({
 });
 
 export default compose(
-  connect (mapStateToProps, { getUserProfile, getStatus, updateStatus }),
+  connect(mapStateToProps, { getUserProfile, getStatus, updateStatus, savePhoto }),
   withRouter,
   withAuthRedirect
 )(ProfileContainer);
