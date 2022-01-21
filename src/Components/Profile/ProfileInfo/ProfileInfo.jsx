@@ -5,7 +5,7 @@ import profilePhoto from "../../../Assets/avatarProfile.png";
 import Preloader from '../../Common/Preloader/Preloader';
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faUpload } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faFacebook, faVk, faTwitter, faInstagram, faYoutube, faInternetExplorer } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -28,14 +28,14 @@ const ProfileInfo = ({ profile, status, updateStatus, isOwner, savePhoto }) => {
       <div className={s.description}>
         <div className={s.profilePhoto}>
           <img className={s.mainPhoto} src={profile.photos.large != null ? profile.photos.large : profilePhoto} alt="" />
-          {isOwner && 
-            <input className={s.addPhotoButton} type={"file"} onChange={onMainPhotoSelected} />
-            // <label for="input__file" class="input__file-button">
-            //   <span class="input__file-icon-wrapper"><img class="input__file-icon" src="" alt="Выбрать файл" width="25"></span>
-            //   <span class="input__file-button-text">Выберите файл</span>
-            // </label>
-            // https://smartlanding.biz/stilizaciya-input-type-file.html
-
+          {isOwner &&
+            <div className={s.addPhotoWrap}>
+              <label className={s.addPhotoLabel}>
+              <input className={s.addPhotoInput} type={"file"} onChange={onMainPhotoSelected} /> 
+                <span className={s.addImageWrap}><FontAwesomeIcon icon={faUpload} /></span>
+                <span>Add photo</span>
+              </label>
+            </div>
           }
         </div>
         <div className={s.content}>
