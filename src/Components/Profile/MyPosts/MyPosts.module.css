@@ -10,7 +10,6 @@
   margin: 20px 0 20px;
   display: flex;
   flex-direction: column;
-  -width: 60%;
 }
 .postNewTextarea {
   outline: none;
@@ -18,7 +17,7 @@
   padding: 10px;
   font-size: 1em;
   color: #05386b;
-  margin-bottom: 6px;
+  margin: 6px;
   resize: none;
   background-color: rgba( 204, 204, 204, .3);
   width: 100%;
