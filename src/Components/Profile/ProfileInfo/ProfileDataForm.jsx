@@ -25,7 +25,7 @@ const ProfileDataForm = ({ handleSubmit, profile, error }) => {
             {error && <span className={s.formControlError}>{error}</span>}
             <span className={s.socialNetworkTitle}>contacts:</span> {Object.keys(profile.contacts).map(key => {
                 return <div key={key} className={s.contact}>
-                    <span>{key}: {createField(s.formItemInput, key, "contacts." + key, "text", Input, [])}</span>        
+                    <span className={s.contactItem}>{key}: {createField(s.formItemInput, key, "contacts." + key, "text", Input, [])}</span>        
                 </div>
             })
             }

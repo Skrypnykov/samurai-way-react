@@ -149,10 +149,17 @@
 
 
 /* Form  */
+.contact span{
+  display: flex;
+  align-items: center;
+}
+.contactItem div{
+  margin-left: 5px;
+}
 .formItemInput {
   outline: none;
   border: 1px solid #ddd;
-  padding: 5px 10px;
+  padding: 2px 5px;
   font-size: .9em;
   color: #05386b;
   margin-bottom: 10px;
