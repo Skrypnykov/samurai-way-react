@@ -50,14 +50,15 @@
   font-weight: 600;
 }
 
+/* content block */
+
 .content {
   font-size: 1.3em;
   margin: 10px 30px;
-  display: flex;
-  flex-direction: column;
   position: relative;
 }
 
+/* buttons*/
 .editProfileButton {
   background-color: #5cdb95;
   border: none;
@@ -72,140 +73,80 @@
   right: 0;
 }
 
+.saveProfileButton {
+  background-color: #5cdb95;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: 0 0 2px #05386b;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
 .contentTitle {
   font-size: 1.5em;
   font-weight: 500;
   margin-bottom: 20px;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 4px #CAC8C8;
 }
 
 .contentItem {
   margin-bottom: 10px;
-}
-
-.content h4 {
-  text-transform: capitalize;
+  font-size: .8em;
+  font-weight: 400;
+  color: #202124;
 }
 
 .contentData {
   text-decoration: none;
   color: #379683;
+  -text-shadow: 1px 1px 6px #CAC8C8;
+  font-style: italic;
 }
 
-.socialNetworkWrap {
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-}
-
-.socialNetwork {
-  display: flex;
-}
-
-.socialNetwork li {
-  cursor: pointer;
-  font-size: 1.3em;
-  margin: 0 5px;
-}
-
-.socialNetwork li:hover {
-  color: #318775;
-}
-
-.facebook {
-  color: #4267b2;
-}
-
-.website {
-  color: #1ebbee;
-}
-
-.vk {
-  color: #45668e;
-}
-
-.twitter {
-  color: #1da1f2;
-}
-
-.instagram {
-  color: #dd2a7b;
-}
-
-.youtube {
-  color: #ff0000;
-}
-
-.github {
-  color: #333;
-}
-
-.mainLink {
-  color: #5cdb95;
-}
-
-.newSocialNetworkBlock {
-  margin-top: 10px;
+/* social network link */
+.socialNetworkBlock {
+  margin-top: 30px;
 }
 .socialNetworkTitle {
   display: inline-block;
   padding-bottom: 10px;
-  color: #5cdb95;
+  color: #05386b;
+  -color: #202124;
   font-weight: 600;
 }
-.contact {
-  margin-bottom: 5px;
+.contactTitle {
+  margin-bottom: 6px;
   padding-left: 10px;
+  font-size: .8em;
+  font-weight: 400;
+  color: #202124;
 }
 .contactValue{
   padding-left: .5em;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 400;
+  color: #557a95;
+  text-shadow: 3px 3px 6px #CAC8C8;
+              
 }
 
-/* checkbox */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 42px;
-  height: 22px;
-}
+/* social network color */
+/* 
+.facebook {color: #4267b2;}
+.website {color: #1ebbee;}
+.vk {color: #45668e;}
+.twitter {color: #1da1f2;}
+.instagram {color: #dd2a7b;}
+.youtube {color: #ff0000;}
+.github {color: #333;}
+.mainLink {color: #5cdb95;} 
+*/
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 14px;
-  width: 14px;
-  left: 5px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.switchInput:checked + .slider {
-  background-color: #5cdb95;
-}
-
-.switchInput:focus + .slider {
-  box-shadow: 0 0 1px #5cdb95;
-}
-
-.switchInput:checked + .slider:before {
-  -webkit-transform: translateX(18px);
-  -ms-transform: translateX(18px);
-  transform: translateX(18px);
-}
 
 /* Form  */
 .formItemInput {
@@ -231,4 +172,39 @@
   resize: none;
   background-color: rgba( 204, 204, 204, .3);
   width: 100%;
+}
+
+.formCheckbox {
+  margin: 15px 0;
+  font-size: .85em;
+}
+
+.formCheckboxLabel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.formCheckboxInput {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.formControlError {
+  color: white;
+  background-color: tomato;
+  margin-top: 10px;
+  padding: 4px 10px;
+  text-align: center;
+  font-size: .75em;
+  position: absolute;
+  right: 0;
+  -width: 100%;
 }

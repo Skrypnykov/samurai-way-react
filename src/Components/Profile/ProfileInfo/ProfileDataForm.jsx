@@ -2,30 +2,40 @@ import React from "react";
 import { reduxForm } from 'redux-form';
 import s from "./ProfileInfo.module.css";
 import { createField, Input, Textarea } from "../../Common/FormsControls/FormsControls";
-import { required } from "../../../Utils/Validators/validators";
+// import { required } from "../../../Utils/Validators/validators";
 
-const ProfileDataForm = ({ profile }) => {
-    return <form>
-        <button className={s.editProfileButton} onClick={() => { }} >Save</button>
-
+const ProfileDataForm = ({ handleSubmit, profile, error }) => {
+    return <form onSubmit={handleSubmit}>
         <h4 className={s.contentTitle}>
-            {createField(s.formItemInput, "Full name", "fullName", "text", Input, [required])}
+            {createField(s.formItemInput, "full name", "fullName", "text", Input, [])}
         </h4>
-        <p className={s.contentItem}>about me: &nbsp;
-            <span className={s.contentData}>{profile.aboutMe}</span>
-        </p>
-        <p className={s.contentItem}>looking for a job: &nbsp;
-            <label className={s.switch}>
-                <input className={s.switchInput} type="checkbox" value={profile.lookingForAJob} />
-                <span className={s.slider}></span>
+        <div className={s.contentItem}>about me: &nbsp;
+            {createField(s.formTextarea, "about me", "aboutMe", "text", Textarea, [])}
+        </div>
+        <div className={s.formCheckbox}>
+            <label className={s.formCheckboxLabel} htmlFor="">
+                {createField(s.formCheckboxInput, null, "lookingForAJob", "checkbox", Input, [])}
+                &nbsp; looking for a job:
             </label>
-        </p>            
-        <p className={s.contentItem}>my professional skills: &nbsp;
-            {createField(s.formTextarea, "my professional skills", "lookingForAJobDescription", "text", Textarea, [required])}
-        </p>
+        </div>
+        <div className={s.contentItem}>my professional skills: &nbsp;
+            {createField(s.formTextarea, "my professional skills", "lookingForAJobDescription", "text", Textarea, [])}
+        </div>
+        <div className={s.newSocialNetworkBlock}>
+            <span className={s.socialNetworkTitle}>contacts:</span> {Object.keys(profile.contacts).map(key => {
+                return <div key={key} className={s.contact}>
+                    <span>{key}: {createField(s.formItemInput, key, "contacts." + key, "text", Input, [])}</span>
+                    {error && <span className={s.formControlError}>{error}</span>}
+                </div>
+            })
+            }
+            
+        </div>
+   
+        <button className={s.saveProfileButton}>Save</button>
     </form>
 }
 
-const ProfileDataFormReduxForm = reduxForm({ form: 'editProfile' })(ProfileDataForm)
+const ProfileDataFormReduxForm = reduxForm({ form: 'edit-profile' })(ProfileDataForm)
 
 export default ProfileDataFormReduxForm;
