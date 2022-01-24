@@ -153,14 +153,14 @@
   outline: none;
   border: 1px solid #ddd;
   padding: 5px 10px;
-  font-size: 1em;
+  font-size: .9em;
   color: #05386b;
   margin-bottom: 10px;
   resize: none;
   background-color: rgba(204, 204, 204, .3);
 }
 .formItemInput::placeholder { 
-  color: #999; 
+  color: #999;
 }
 .formTextarea {
   outline: none;
@@ -206,5 +206,4 @@
   font-size: .75em;
   position: absolute;
   right: 0;
-  -width: 100%;
 }

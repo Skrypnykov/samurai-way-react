@@ -22,10 +22,10 @@ const ProfileDataForm = ({ handleSubmit, profile, error }) => {
             {createField(s.formTextarea, "my professional skills", "lookingForAJobDescription", "text", Textarea, [])}
         </div>
         <div className={s.newSocialNetworkBlock}>
+            {error && <span className={s.formControlError}>{error}</span>}
             <span className={s.socialNetworkTitle}>contacts:</span> {Object.keys(profile.contacts).map(key => {
                 return <div key={key} className={s.contact}>
-                    <span>{key}: {createField(s.formItemInput, key, "contacts." + key, "text", Input, [])}</span>
-                    {error && <span className={s.formControlError}>{error}</span>}
+                    <span>{key}: {createField(s.formItemInput, key, "contacts." + key, "text", Input, [])}</span>        
                 </div>
             })
             }
