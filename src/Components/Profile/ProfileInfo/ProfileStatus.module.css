@@ -6,8 +6,9 @@
 .statusMode {
   font-size: 20px;
   padding: 2px 0;
-  font-weight: 600;
   font-style: italic;
+  color: #557a95;
+  text-shadow: 3px 3px 6px #CAC8C8;
 }
 .statusInput {
   margin: 0;
@@ -17,5 +18,5 @@
   border-radius: 5px;
   font-size: 20px;
   color: #05386b;
-  background-color: rgba(204, 204, 204, 0.4);
+  background-color: rgba(204, 204, 204, 0.2);
 }

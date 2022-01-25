@@ -79,7 +79,7 @@ const ProfileData = ({ profile, isOwner, goToEditMode }) => {
     }
     <div className={s.socialNetworkBlock}>
       <span className={s.socialNetworkTitle}>contacts:</span> {Object.keys(profile.contacts).map(key => {
-        return <Contact key={key} contactTitle={key} contactValue={profile.contacts[key]} />
+        return <Contact key={key} contactTitle={key} contactValue={profile.contacts[key]}/>
       })
       }
     </div>
@@ -87,7 +87,7 @@ const ProfileData = ({ profile, isOwner, goToEditMode }) => {
 }
 
 const Contact = ({ contactTitle, contactValue }) => {
-  return <div className={s.contactTitle}>{contactTitle}: <span className={s.contactValue}>{contactValue}</span></div>
+  return <div className={s.contactTitle}>{contactTitle}: <a href={contactValue} className={s.contactValue} target="_blank" rel="noopener noreferrer">{contactValue}</a></div>
 }
 
 export default ProfileInfo;
