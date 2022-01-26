@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/samurai-way-react/static/css/main.0a770b53.chunk.css",
-    "main.js": "/samurai-way-react/static/js/main.9e6f3300.chunk.js",
-    "main.js.map": "/samurai-way-react/static/js/main.9e6f3300.chunk.js.map",
-    "runtime-main.js": "/samurai-way-react/static/js/runtime-main.368d6eb3.js",
-    "runtime-main.js.map": "/samurai-way-react/static/js/runtime-main.368d6eb3.js.map",
-    "static/js/2.42d2be28.chunk.js": "/samurai-way-react/static/js/2.42d2be28.chunk.js",
-    "static/js/2.42d2be28.chunk.js.map": "/samurai-way-react/static/js/2.42d2be28.chunk.js.map",
-    "static/js/3.352902c4.chunk.js": "/samurai-way-react/static/js/3.352902c4.chunk.js",
-    "static/js/3.352902c4.chunk.js.map": "/samurai-way-react/static/js/3.352902c4.chunk.js.map",
+    "main.css": "/samurai-way-react/static/css/main.835e1868.chunk.css",
+    "main.js": "/samurai-way-react/static/js/main.48567b2e.chunk.js",
+    "main.js.map": "/samurai-way-react/static/js/main.48567b2e.chunk.js.map",
+    "runtime-main.js": "/samurai-way-react/static/js/runtime-main.739745d2.js",
+    "runtime-main.js.map": "/samurai-way-react/static/js/runtime-main.739745d2.js.map",
+    "static/js/2.70e86f0e.chunk.js": "/samurai-way-react/static/js/2.70e86f0e.chunk.js",
+    "static/js/2.70e86f0e.chunk.js.map": "/samurai-way-react/static/js/2.70e86f0e.chunk.js.map",
+    "static/js/3.ff6effe6.chunk.js": "/samurai-way-react/static/js/3.ff6effe6.chunk.js",
+    "static/js/3.ff6effe6.chunk.js.map": "/samurai-way-react/static/js/3.ff6effe6.chunk.js.map",
     "index.html": "/samurai-way-react/index.html",
-    "static/css/main.0a770b53.chunk.css.map": "/samurai-way-react/static/css/main.0a770b53.chunk.css.map",
-    "static/js/2.42d2be28.chunk.js.LICENSE.txt": "/samurai-way-react/static/js/2.42d2be28.chunk.js.LICENSE.txt",
+    "static/css/main.835e1868.chunk.css.map": "/samurai-way-react/static/css/main.835e1868.chunk.css.map",
+    "static/js/2.70e86f0e.chunk.js.LICENSE.txt": "/samurai-way-react/static/js/2.70e86f0e.chunk.js.LICENSE.txt",
     "static/media/a1.32c1e9c8.png": "/samurai-way-react/static/media/a1.32c1e9c8.png",
     "static/media/a2.5dd77984.png": "/samurai-way-react/static/media/a2.5dd77984.png",
     "static/media/a3.b1ae6da1.png": "/samurai-way-react/static/media/a3.b1ae6da1.png",
@@ -22,9 +22,9 @@
     "static/media/user.142cad88.png": "/samurai-way-react/static/media/user.142cad88.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.368d6eb3.js",
-    "static/js/2.42d2be28.chunk.js",
-    "static/css/main.0a770b53.chunk.css",
-    "static/js/main.9e6f3300.chunk.js"
+    "static/js/runtime-main.739745d2.js",
+    "static/js/2.70e86f0e.chunk.js",
+    "static/css/main.835e1868.chunk.css",
+    "static/js/main.48567b2e.chunk.js"
   ]
 }
