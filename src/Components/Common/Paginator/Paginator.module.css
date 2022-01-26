@@ -5,9 +5,10 @@
 }
 .pageNumber {
   font-size: 1em;
-  padding: 5px 5px 0px 4px;
+  padding: 4px;
   cursor: pointer;
   display: inline-block;
+  text-align: center;
 }
 .selectedPage {
   background-color: #318775;
@@ -22,7 +23,7 @@
   color: #fff;
   text-shadow: 0 0 2px #05386b;
   margin: 0 8px;
-  padding: 3px 10px;
+  padding: 4px 10px;
   cursor: pointer;
   font-size: .9em;
   font-weight: 600;
