@@ -28,3 +28,18 @@ body {
   background-color: transparent;
   color: #05386b;
 }
+
+/* Page not found error */
+.pageNotFound {
+  height: 100%;
+  position: relative;
+}
+.pageNotFound p{
+  font-size: 1.5em;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}

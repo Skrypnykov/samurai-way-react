@@ -70,9 +70,13 @@ export const getStatus = (userId) => async (dispatch) => {
 }
 
 export const updateStatus = (status) => async (dispatch) => {
-  let response = await profileAPI.updateStatus(status);
-  if (response.data.resultCode === 0) {
-    dispatch(setStatus(status));
+  try {
+    let response = await profileAPI.updateStatus(status);
+    if (response.data.resultCode === 0) {
+      dispatch(setStatus(status));
+    }
+  } catch (error) {
+    // перехват ошибки
   }
 }
 
@@ -88,7 +92,7 @@ export const saveProfile = (profile) => async (dispatch, getState) => {
   const response = await profileAPI.saveProfile(profile);
   if (response.data.resultCode === 0) {
     dispatch(getUserProfile(userId));
-  }else{
+  } else {
     // let message = response.data.messages.length > 0 ? response.data.messages[0] : "Some error";
     dispatch(stopSubmit("edit-profile", { _error: response.data.messages[0] }));
     return Promise.reject(response.data.messages[0]);
