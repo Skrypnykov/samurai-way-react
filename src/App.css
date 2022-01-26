@@ -7,6 +7,7 @@
 }
 body {
   background-color: #edf5e1;
+  user-select: none;
 }
 .app-wrapper {
   max-width: 1280px;
@@ -42,4 +43,5 @@ body {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  user-select: none;
 }
