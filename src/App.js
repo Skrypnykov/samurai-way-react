@@ -28,10 +28,10 @@ class App extends React.Component {
   }
   componentDidMount() {
     this.props.initializeApp();
-    window.addEventListener("unhandledrejection", this.catchAllUnhandledErrors); 
+    window.addEventListener("unhandledrejection", this.catchAllUnhandledErrors);
   }
-  componentWillUnmount(){
-    window.removeEventListener("unhandledrejection", this.catchAllUnhandledErrors); 
+  componentWillUnmount() {
+    window.removeEventListener("unhandledrejection", this.catchAllUnhandledErrors);
   }
 
   render() {
@@ -80,7 +80,7 @@ let AppContainer = compose(
 
 const SamuraiJSApp = (props) => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Provider store={store}>
         <AppContainer />
       </Provider>
