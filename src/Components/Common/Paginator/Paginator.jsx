@@ -4,11 +4,11 @@ import cn from 'classnames';
 
 let Paginator = ({ totalItemsCount, pageSize, currentPage, onPageChanged, portionSize = 10 }) => {
 
-  let pagesCount = Math.ceil(totalItemsCount / pageSize);
+  let pagesCount = Math.ceil(totalItemsCount / pageSize); // вычисляем количество страниц
 
-  let pages = []
+  let pages = [] // создаем пустой массив для количества страниц
   for (let i = 1; i <= pagesCount; i++) {
-    pages.push(i);
+    pages.push(i); // заполняем массив 
   }
 
   let portionCount = Math.ceil(pagesCount / portionSize);
@@ -18,22 +18,24 @@ let Paginator = ({ totalItemsCount, pageSize, currentPage, onPageChanged, portio
 
   return (
     <div className={s.paginator}>
-      {portionNumber > 1 && (
+      {portionNumber > 1 &&
         <button className={s.paginatorButton} onClick={() => { setPortionNumber(portionNumber - 1) }}>PREV</button>
-      )}
+      }
 
       {pages
-        .filter((p) => p >= leftPortionPageNumber && p <= rightPortionPageNumber,)
+        .filter(p => p >= leftPortionPageNumber && p <= rightPortionPageNumber)
         .map((p) => {
-          return (<span className={cn({ [s.selectedPage]: currentPage === p }, s.pageNumber)}
+          return <span className={cn({ [s.selectedPage]: currentPage === p }, s.pageNumber)}
             key={p}
-            onClick={(e) => { onPageChanged(p) }}>{p}
-          </span>)
+            onClick={(e) => {
+              onPageChanged(p);
+            }}>{p}</span>
         })
       }
 
-      {portionCount > portionNumber && (
-        <button className={s.paginatorButton} onClick={() => { setPortionNumber(portionNumber + 1) }}>NEXT</button>)}
+      {portionCount > portionNumber &&
+        <button className={s.paginatorButton} onClick={() => { setPortionNumber(portionNumber + 1) }}>NEXT</button>
+      }
     </div>
   )
 }
